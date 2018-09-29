@@ -1,0 +1,237 @@
+@charset 'utf-8';
+#topcontent{
+  // height: 200px;
+  // background: pink;  
+}
+
+.left{
+  float:left;
+}
+.headertop_wrap{//顶部外盒
+  width: 100%;
+  background: #e3e4e6;
+  border-bottom: 1px solid #eee;
+  line-height: 30px;
+}
+.headertop{//最顶部
+  width: 1210px;
+  margin: 0 auto;
+  line-height: 30px;
+  ul{
+    float:right;
+    height: 30px;
+    overflow: visible;
+    &:after{
+      content: " ";
+      display: block;
+      clear: both;
+      height: 0;
+      overflow: hidden;
+      visibility: hidden;
+    }
+    li{
+      float:left;
+      list-style: none;
+      width: 58px;
+      height: 30px;
+      padding: 0 11px 0 12px;
+      text-align: center;
+      position: relative;
+      a{
+        color:#666;
+      }
+    }
+  }
+}
+#topcontent .hlist b{
+  position: absolute;
+  background: url(../images/bg1.png) no-repeat;
+  top: 13px;
+  right: 0px;
+  width: 7px;
+  height: 4px;
+  background-position: -95px -55px;
+
+}
+.headertop:after{
+  content: " ";
+  display: block;
+  clear: both;
+  height: 0;
+  overflow: hidden;
+  visibility: hidden;
+}
+.fullwidth{
+  width:100%;
+  margin:0 auto;
+}
+#topcontent .header_wrapper{
+  width: 1210px;
+  margin: 15px auto;
+  position: relative;
+}
+.headermid{
+  height: 60px;
+  position: relative;
+  .headermid_left{
+    position: absolute;
+    top: -46px;
+    width: 201px;
+    height: 169px;
+    background: #fff;
+    text-align: center;
+    z-index: 10;
+    
+  }
+  .headermid_mid{
+    padding: 4px 0px 0 322px;
+    position: relative;
+  }
+  .headermid_right{
+    position: absolute;
+    right: 148px;
+    top: 4px;
+    width: 178px;
+    z-index: 11;
+    background: #fff;
+  }
+}
+.headermid_left a{
+  margin-top: 35px;
+  margin-bottom: 10px;
+  width: 200px;
+  display: block;
+  height: 57px;
+}
+.headermid_left a img{
+  width: 100%;
+  height: 100%;
+}
+.headermid_left .logotext{
+    padding-top: 0px;
+    width: 200px;
+    text-align: center;
+    font-size: 16px;
+    color: #777777;
+    background: #fff;
+    z-index:10;
+}
+.headermid_mid .searchbox{
+    z-index: 11;
+    width: 538px;
+    height: 30px;
+    margin-bottom: 3px;
+    border: 1px solid #3391d7;
+    position: relative;
+}
+.searchbox form{
+    width: 538px;
+    height: 30px;
+    overflow: hidden;
+    position: relative;
+}
+.searchbox .form .text{
+  border: 0;
+  width: 451px;
+  height: 20px;
+  padding: 5px;
+  background-position: 0 -360px;
+  background-color: #fff;
+  background-repeat: repeat-x;
+  line-height: 20px;
+  color: #999;
+  font-family: arial,"\5b8b\4f53";
+  font-size: 12px;
+}
+.searchbox .fangdajing{
+  border:0;
+  position: absolute;
+    right: 47px;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    background-image:url('../images/fdj.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.searchbox .button{
+  border:0;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 47px;
+  height: 30px;
+  background: #0076cd;
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+}
+.headermid_right .myshopcar{
+  padding: 0 0 0 0px;
+  width: 176px;
+  height: 32px;
+  border:1px solid #E3E3E3;
+  background: url(../images/car.png);
+  background-repeat: no-repeat;
+  background-position: 33px;
+  position: relative;
+  cursor: pointer;
+  .myshopcartext{
+    position: absolute;
+    left:60px;
+  }
+  .shopping{
+    position: absolute;
+    right:25px;
+    top:5px;
+    height:20px;
+    width:20px;
+    background: red;
+    border-radius: 50%;
+    text-align: center;
+    color:#ffffff;
+    cursor: pointer;
+    
+  }
+  b{
+    position: absolute;
+    top: 9px;
+    right: 4px;
+    width: 0;
+    height: 0;
+    border-style: dashed dashed dashed solid;
+    border-width: 5px;
+    border-color: transparent transparent transparent #CCC;
+    overflow: hidden;
+    cursor: pointer;
+  }
+}
+
+#hotwords a{
+  color:#999;
+  margin-right: 10px;
+  line-height: 20px;
+}
+#mainnav{
+  width: 1210px;
+  margin: 18px auto 0 auto ;
+  height: 45px;
+  .nav_list{
+    overflow: hidden;
+    margin-left: 220px;
+    line-height: 45px;
+    li{
+      list-style: none;
+      float: left;
+      margin-left: 30px;
+      font-size: 16px;
+      a{
+        color: #333;
+        font-weight: 400;
+        &:hover{
+          color:#FF5B01;
+        }
+      }
+    }
+  }
+}
