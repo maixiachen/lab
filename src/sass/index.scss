@@ -97,7 +97,6 @@ a{
   .floors{
     width:1210px;
     margin: 0 auto;
-    height:200px;
     background:lightyellow;
   }
   .adv{
@@ -212,6 +211,7 @@ a{
     }
   }  
 }
+// 主菜单
 #main_menu{
   width:1210px;
   height:471px;
@@ -370,3 +370,134 @@ a{
     
   }
 }
+
+// 广告区
+.floors{
+  .floor_1{
+    overflow: hidden;
+  }
+  .floor_2{
+    overflow: hidden;
+  }
+  .floor_left{
+    @include left();
+    width: 215px;
+    margin-top:30px;
+  }
+  .floor_name{
+    font-family: '微软雅黑';
+    height: 80px;
+    width:100%;
+    line-height: 80px;
+    text-align:center;
+    text-indent: 35px;
+    background-color: #3c8d96;
+    font-size: 22px;
+    color: #fff;
+  }
+}
+.floor_left{
+  position: relative;
+  h2{
+    color: #333;
+    font-family: '微软雅黑';
+    font-weight: 400;
+    font-size: 20px;
+    display:block;
+    line-height: 20px;
+    position: relative;
+    left: 0px;
+    top: 0px;
+    padding-left: 40px;
+    padding-top: 0px;
+
+      i{
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 48px;
+        height: 49px;
+        padding-right: 0px;
+        line-height: 40px;
+        color:#ffffff;;
+        font-style:normal;
+        text-align: center;
+        overflow: hidden; 
+        background: url(../images/flooricon-1.png) no-repeat;
+        background-size: 100% 100%;
+      }
+    }
+    .floor_img{
+      img{
+        display:block;
+      }
+    }
+    .floor_text{
+      ul{
+        overflow: hidden;
+        padding-top: 10px;
+        padding-left: 11px;
+      }
+      li{
+        width: 50%;
+        border-bottom: 1px dotted #e4e4e4;
+        // box-sizing: border-box;
+        height: 30px;
+        line-height: 30px;
+        @include left();
+      }
+    }
+  }
+  .floor_right{
+    width: 995px;
+    @include left();
+    margin-top: 30px;
+    .tab_title{
+      width: 100%;
+    }
+    .tab_title{
+      width: 100%;
+      overflow: hidden;
+      ul{
+        overflow: hidden;
+        height: 40px;
+        border: 1px solid #e2e2e2;
+        border-left: none;
+        box-sizing: border-box;
+      }
+      li{
+        @include left();
+        height: 40px;
+        line-height: 40px;
+        padding-right: 10px;
+        text-align: center;
+      }
+    }
+    .tab_content{
+      width: 100%;
+      overflow: hidden;
+      ul{
+        overflow: hidden;
+      }
+      li{
+        @include left();
+        width: 213px;
+        height: 230px;
+        padding: 4px 17px 0;
+        border-bottom: 1px solid #ededed;
+        border-right: 1px solid #ededed;
+        a{
+          display: block;
+        }
+        img{
+          width: 130px;height: 130px;
+        }
+        .f_img{
+          text-align: center;
+        }
+        .f_price{
+          text-align: center;
+        }
+      }
+    }
+  }

@@ -529,7 +529,6 @@ a {
 #main_content .floors {
   width: 1210px;
   margin: 0 auto;
-  height: 200px;
   background: lightyellow;
 }
 #main_content .adv {
@@ -819,6 +818,141 @@ a {
 .adv .advbox li img {
   width: 100%;
   height: 100%;
+}
+
+.floors .floor_1 {
+  overflow: hidden;
+}
+.floors .floor_2 {
+  overflow: hidden;
+}
+.floors .floor_left {
+  float: left;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 215px;
+  margin-top: 30px;
+}
+.floors .floor_name {
+  font-family: '微软雅黑';
+  height: 80px;
+  width: 100%;
+  line-height: 80px;
+  text-align: center;
+  text-indent: 35px;
+  background-color: #3c8d96;
+  font-size: 22px;
+  color: #fff;
+}
+
+.floor_left {
+  position: relative;
+}
+.floor_left h2 {
+  color: #333;
+  font-family: '微软雅黑';
+  font-weight: 400;
+  font-size: 20px;
+  display: block;
+  line-height: 20px;
+  position: relative;
+  left: 0px;
+  top: 0px;
+  padding-left: 40px;
+  padding-top: 0px;
+}
+.floor_left h2 i {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 48px;
+  height: 49px;
+  padding-right: 0px;
+  line-height: 40px;
+  color: #ffffff;
+  font-style: normal;
+  text-align: center;
+  overflow: hidden;
+  background: url(../images/flooricon-1.png) no-repeat;
+  background-size: 100% 100%;
+}
+.floor_left .floor_img img {
+  display: block;
+}
+.floor_left .floor_text ul {
+  overflow: hidden;
+  padding-top: 10px;
+  padding-left: 11px;
+}
+.floor_left .floor_text li {
+  width: 50%;
+  border-bottom: 1px dotted #e4e4e4;
+  height: 30px;
+  line-height: 30px;
+  float: left;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.floor_right {
+  width: 995px;
+  float: left;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 30px;
+}
+.floor_right .tab_title {
+  width: 100%;
+}
+.floor_right .tab_title {
+  width: 100%;
+  overflow: hidden;
+}
+.floor_right .tab_title ul {
+  overflow: hidden;
+  height: 40px;
+  border: 1px solid #e2e2e2;
+  border-left: none;
+  box-sizing: border-box;
+}
+.floor_right .tab_title li {
+  float: left;
+  margin-left: 0px;
+  margin-right: 0px;
+  height: 40px;
+  line-height: 40px;
+  padding-right: 10px;
+  text-align: center;
+}
+.floor_right .tab_content {
+  width: 100%;
+  overflow: hidden;
+}
+.floor_right .tab_content ul {
+  overflow: hidden;
+}
+.floor_right .tab_content li {
+  float: left;
+  margin-left: 0px;
+  margin-right: 0px;
+  width: 213px;
+  height: 230px;
+  padding: 4px 17px 0;
+  border-bottom: 1px solid #ededed;
+  border-right: 1px solid #ededed;
+}
+.floor_right .tab_content li a {
+  display: block;
+}
+.floor_right .tab_content li img {
+  width: 130px;
+  height: 130px;
+}
+.floor_right .tab_content li .f_img {
+  text-align: center;
+}
+.floor_right .tab_content li .f_price {
+  text-align: center;
 }
 
 /*# sourceMappingURL=index.css.map */
