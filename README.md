@@ -1,2 +1,2 @@
-# lab360.cn
+# lab
 my first project
