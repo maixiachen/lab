@@ -1,13 +1,15 @@
 #menu_left{
   width: 201px;
-  background: gray;
+  background:rgba(56, 54, 53,0.7);
   height: 471px;
   ul{
-    padding-top: 5px;
-    li{
-      width: 200px;
+      padding-top: 5px;
+      li{
+      width: 201px;
       height: 83px;
       line-height: 33px;
+      color: #ffffff;
+      }
       h3{
         line-height: normal;
         font-size: 14px;
@@ -15,7 +17,7 @@
         margin: 5px,0 0 0;
         float: left;
         margin-left: 5px;
-        color: #ffffff;
+        // color: #ffffff;
       }
       i{
         display: block;
@@ -23,7 +25,8 @@
         margin-right: 15px;
         font: 400 9px/14px consolas;
         margin-top: 7px;
-        color: #ffffff;
+        cursor: pointer;
+        // color: #ffffff;
       }
       p{
         line-height: 24px;
@@ -35,9 +38,18 @@
         a{color: #ffffff}
         em{font-style: normal}
       }
-    }
   }
   .lastpt{
     margin-left: 15px;
+  }
+  ul li:hover{
+    color:#333333;
+    background: #ffffff;
+    a{
+      color:#333333;
+    }
+    i{
+      display: none;
+    }
   }
 }

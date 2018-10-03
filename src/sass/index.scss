@@ -2,13 +2,10 @@
 @import "header";
 @import "footer";
 @import "menu_left";
-@mixin left($value:0px) {
+@mixin left($value:0px,$right:0px) {
   float:left;
-  margin-right:$value;
-}
-*{
-  margin: 0;
-  padding: 0;
+  margin-left:$value;
+  margin-right:$right;
 }
 html,body{
   width: 100%;
@@ -51,6 +48,28 @@ a{
   background-color: #777777;
   left: 94.6px; 
   display: block;
+  .leftnav_item{
+    width:36px;
+    border-top:1px solid #b1aaaa;
+    &:hover{
+      background:#fe2400;
+      border-top-color: #fe2400;
+    }
+    .topbtn_arrow{
+      display: block;
+      width: 0;
+      height: 0;
+      margin: auto;
+      border-style: solid;
+      border-width: 4px;
+      border-color: #5e4a4a #5e4a4a #fff;
+    }
+  }
+  .leftnav_item_top{
+    height: 42px;
+    text-align: center;
+    background: #5e4a4a;
+  }
 }
 #banner{
   // height: 100px;
@@ -65,17 +84,15 @@ a{
 #main_content{
   width:1210px;
   margin: 0 auto;
-  overflow: hidden;
+  // overflow: hidden;
   &:after{
     content: "";clear: both;display: block;height: 0;overflow: hidden;visibility: hidden;
   }
-  .typical_user{
-    height:50px;
-    background:#ddd;
+  .select_sort{
+    margin-top:30px;
   }
   .select_brands{
-    height:50px;
-    background:lightgreen;
+    margin-top:30px;
   }
   .floors{
     width:1210px;
@@ -84,10 +101,116 @@ a{
     background:lightyellow;
   }
   .adv{
-    height:50px;
     background:green;
   }
 
+}
+// 精选品类
+.select_sort{
+  // 品类底部
+  .sort_foot{
+    height:507px;
+    // background: lightyellow;
+    .sort_left{
+      @include left();
+      width: 462px;
+      overflow: hidden;
+      .left_t{
+        height: 247px;
+        margin-bottom:13px;
+      }
+      .left_f{
+        height: 247px;
+      }
+    }
+    .sort_right{
+      @include left(10px);
+      width: 738px;
+      ul{
+        width: 100%;
+        li{
+          width: 240px;
+          height: 250px;
+          @include left(0,6px);
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+.sort_top{
+  height: 40px;
+  margin-bottom: 10px;
+  line-height: 40px;
+  span{
+    padding-left: 10px;
+    font-size: 16px;
+    font-family: '微软雅黑';
+    color: #6a6868;
+  }
+  .more{
+    a{
+      height: 40px;
+      line-height: 40px;
+      font-weight: bold;
+      color: #6a6868;
+    }
+    
+  }
+}
+// 精选品类图标
+.icon{
+  float: left;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 15px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+  color: #000;
+  background: url(../images/selece_sort.png);
+  background-repeat: no-repeat;
+  -moz-background-size: 100% 100%;
+  background-size: 100% 100%;
+}
+#brandsicon{
+  background: url(../images/brandsicon.png) no-repeat;
+  background-size: 100% 100%;
+}
+// ----------------------------------------
+.select_brands{//精选品牌
+  overflow: hidden;
+  .brands_foot{
+    background: pink;
+  }
+  .brands_left{
+    @include left();
+    width: 202px;
+    height: 299px;
+    background: url(../images/brandsbj.png);
+    .brandstext{
+      width: 172px;
+      margin: 13px;
+      height: 270px;
+      border: 2px solid #fff;
+      text-align: center;
+    }
+  } 
+  .brands_center{
+    width: 840px;
+    height: 299px;
+    background:black;
+    @include left();
+    margin-left: 4px;
+  }
+  .brands_right{
+    @include left();
+    a{display: block;}
+    img{
+      display: block;
+    }
+  }  
 }
 #main_menu{
   width:1210px;
@@ -109,7 +232,6 @@ a{
   background: rgba(255, 255, 255, 0.95);
   .row1{
     height: 120px;
-    background: lightgoldenrodyellow;
     .touxiang{
       @include left();
       width: 60px;
@@ -172,7 +294,7 @@ a{
   }
 }
 .row2_tab{
-  box-sizing: border-box;
+  // box-sizing: border-box;
   padding-left: 2px;
   width: 100%;
   height: 20px;
@@ -212,5 +334,39 @@ a{
     width:48px;
     height:48px;
     background: url(../images/circle.png) no-repeat 3px 0px;
+  }
+}
+//广告区
+.adv{
+  width:1519px;
+  margin-left: -154.5px;
+  .advbox{
+    margin: 0 auto;
+    width: 1210px;
+    height: 140px;
+    background-color: #e0e0e0;
+    ul{
+      width: 100%;
+      height: 100%;
+    }
+    li{
+      float: left;
+      width: 25%;
+      height: 100%;
+      &:hover{
+        background: rgba($color: #000000, $alpha:0.5);
+      }
+      a{
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+      }
+      
+      img{
+        width: 100%;
+        height:100%;
+      }
+    }
+    
   }
 }
