@@ -21,17 +21,13 @@ body{
 a{
   text-decoration: none;
   color: #333333;
-  
+  &:hover{
+    color:#FF5B01;
+  }
 }
 #topcontent a:hover{
     color:#FF5B01;
   }
-#main_content{
-  a:hover{
-    color:#FF5B01;
-
-  }
-}
 .wrapper{
   width: 1210px;
   margin: 0 auto;
@@ -97,10 +93,9 @@ a{
   .floors{
     width:1210px;
     margin: 0 auto;
-    background:lightyellow;
   }
   .adv{
-    background:green;
+    
   }
 
 }
@@ -338,8 +333,13 @@ a{
 }
 //广告区
 .adv{
+
+}
+.adv1{
   width:1519px;
   margin-left: -154.5px;
+  background-color: #e0e0e0;
+  margin-top:30px;
   .advbox{
     margin: 0 auto;
     width: 1210px;
@@ -370,8 +370,18 @@ a{
     
   }
 }
+.adv2{
+  margin: 20px 0 0 -50px;
+  width: 1280px;
+  height: 150px;
+  a{
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+}
 
-// 广告区
+// 楼层广告
 .floors{
   .floor_1{
     overflow: hidden;
@@ -379,10 +389,17 @@ a{
   .floor_2{
     overflow: hidden;
   }
+  .floor_3{
+    overflow: hidden;
+  }
+  .floor_4{
+    overflow: hidden;
+  }
   .floor_left{
     @include left();
     width: 215px;
     margin-top:30px;
+    background-color: #ffffff;
   }
   .floor_name{
     font-family: '微软雅黑';
@@ -395,7 +412,7 @@ a{
     font-size: 22px;
     color: #fff;
   }
-}
+} 
 .floor_left{
   position: relative;
   h2{
@@ -448,56 +465,148 @@ a{
       }
     }
   }
-  .floor_right{
-    width: 995px;
-    @include left();
-    margin-top: 30px;
-    .tab_title{
-      width: 100%;
-    }
-    .tab_title{
-      width: 100%;
+.floor_right{
+  width: 995px;
+  @include left();
+  margin-top: 30px;
+  background: #ffffff;
+  .tab_title{
+    width: 100%;
+    overflow: hidden;
+    ul{
       overflow: hidden;
-      ul{
-        overflow: hidden;
-        height: 40px;
-        border: 1px solid #e2e2e2;
-        border-left: none;
-        box-sizing: border-box;
+      height: 40px;
+      border: 1px solid #e2e2e2;
+      border-left: none;
+      box-sizing: border-box;
+    }
+    li{
+      @include left();
+      height: 40px;
+      line-height: 40px;
+      padding-right: 10px;
+      text-align: center;
+      a{
+        display: block;
+        height: 100%;
+        padding: 0 5px;
+        &:hover{
+          background:url("http://www.lab360.cn/image/indexneweight/libj.png") no-repeat;
+          background-size: 100% 100%;        
+        }
       }
-      li{
-        @include left();
-        height: 40px;
-        line-height: 40px;
-        padding-right: 10px;
+    }
+    .active{
+      background:url("http://www.lab360.cn/image/indexneweight/libj.png") no-repeat;
+      background-size: 100% 100%;
+      a{
+        color: #FF5B01;
+      }   
+    }
+  }
+  .tab_content{
+    width: 100%;
+    overflow: hidden;
+    ul{
+      overflow: hidden;
+    }
+    li{
+      @include left();
+      width: 213px;
+      height: 230px;
+      padding: 4px 17px 0;
+      border-bottom: 1px solid #ededed;
+      border-right: 1px solid #ededed;
+      a{
+        display: block;
+      }
+      img{
+        width: 130px;height: 130px;
+      }
+      .f_img{
         text-align: center;
       }
-    }
-    .tab_content{
-      width: 100%;
-      overflow: hidden;
-      ul{
-        overflow: hidden;
+      .f_price{
+        text-align: center;
+        margin-left: 74px;
+        width: 63px;
+        border: 1px solid #ff2400;           
+          a{
+            &:hover{
+              background: #fe2400;
+              color:#ffffff;
+            }              
+          }
       }
-      li{
-        @include left();
-        width: 213px;
-        height: 230px;
-        padding: 4px 17px 0;
-        border-bottom: 1px solid #ededed;
-        border-right: 1px solid #ededed;
-        a{
-          display: block;
-        }
+      &:hover{
         img{
-          width: 130px;height: 130px;
-        }
-        .f_img{
-          text-align: center;
-        }
-        .f_price{
-          text-align: center;
+          transform: translateX(-5px);
         }
       }
     }
   }
+}
+// 发现好货
+.findgoods{
+  margin: 40px 0 20px 0px;
+  height: 340px;
+  .findgoods_top{
+    height: 77px;
+    background: url("http://www.lab360.cn/image/indexneweight/findgoodsbj.png") no-repeat;
+    background-size: 100%;
+  }
+  .findgoodstext{
+    font-family:' 微软雅黑';
+    font-size: 19px;
+    padding-left: 565px;
+    display: block;
+    height: 32px;
+    line-height: 32px;
+  }
+  .findgoods_bottom{
+    // background: #ffffff;
+  }
+  .findgoodsul{
+    overflow: hidden;
+    li{
+      @include left();
+      background: #ffffff;
+    }
+  }
+  .findgoodsimg{
+    width: 300px;
+    height: 150px;
+    border: 1px solid #dcdcdc;
+    img{
+      height: 130px;
+      width: 130px;
+      margin: 10px 78px;
+    }
+  }
+  .findgoodscontent {
+    width: 300px;
+    border: 1px solid #dcdcdc;
+    border-top: none;
+  }
+  .findgoodstitle {
+    padding: 10px 10px 0 10px;
+    display: block;
+    font-family:'微软雅黑';
+    height: 38px;
+    overflow: hidden;
+  }
+  .findgoodsp{
+    padding: 10px 0 0 20px;
+    font-family: '微软雅黑';
+    height: 52px;
+    font-size: 12px;
+    color: #bdbdbd;
+    overflow: hidden;
+    a{
+        display: block;
+        height: 100%;
+        width: 100%;
+      }
+  } 
+  
+}
