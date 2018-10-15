@@ -53,7 +53,7 @@
         required:'签订许可协议之后方可使用'
       }
     }
-  });  
+  }); 
   $.validator.setDefaults({
     success:function(label){
       alert(1);
@@ -65,8 +65,7 @@
       });
     }
   });
-  var $username=$('#username').val();
-    $.cookie("Username",$username);
+  
 }(jQuery);
 // 
 

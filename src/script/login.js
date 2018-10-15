@@ -27,8 +27,6 @@
         $('.errortext').html('用户名或者密码错误');
 				$('#password').val('');
       }else{//成功,存cookie,跳转到首页
-        // addCookie('UserName',$username,7);
-        // $('.error').html('正确').css('color','green');
         $.cookie("Username",$username);
         if($('.checkbox').is(':checked')){
           $.cookie("Password",$password);
@@ -46,10 +44,3 @@
   $('.error').css('opacity','1'); 
   });
 }(jQuery);
-// 去除底部多余部分
-!function(){
-  
-  // $('#footercontent').on('click','.wrapper',function(){
-  //   $(this).hide();
-  // });
-}();

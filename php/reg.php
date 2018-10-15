@@ -26,6 +26,6 @@
 		//添加语句
 		$query="insert user values(null,'$user','$pass','$email',NOW())";
 		mysql_query($query);
-		header('location:../src/index.html');//页面的跳转
+		header('location:../src/login.html');//页面的跳转
 	}
 ?>
