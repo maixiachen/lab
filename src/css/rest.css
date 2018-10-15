@@ -1,10 +1,11 @@
 @charset "utf-8";
 /* CSS Document */
 html,body,ul,li,ol,dl,dd,dt,th,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img,textarea{margin:0;padding:0}
+html,body{width: 100%;}
 fieldset,img{border:0}
 address,caption,cite,code,dfn,th,var{font-style:normal;font-weight:normal}
 ul,ol{list-style:none}
-input{padding-top:0;padding-bottom:0;font-family:"SimSun","宋体"}
+input{padding-top:0;padding-bottom:0;}
 input::-moz-focus-inner{border:0;padding:0}
 select,input{vertical-align:middle}
 select,input,textarea{font-size:12px;margin:0}

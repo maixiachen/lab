@@ -1,0 +1,581 @@
+@charset "utf-8";
+@import 'header';
+@import 'footer';
+#topcontent{
+  border-bottom: 2px solid #0368B8;
+  #menu_content{
+    
+  }
+}
+#menu{
+  position: absolute;
+  // height: 50px;
+  left:152px;
+  top:129px;
+  z-index: 10;
+  .allsort{
+    // height: 30px;
+    width: 201px;
+    text-align: center;
+    margin-top:10px;
+    position: relative;
+    .allsort-text{
+      display: block;
+      height: 30px;
+      width: 100%;
+      background: #0076cd;
+      color: #ffffff;
+      line-height: 30px;
+      font-size: 16px;
+    }
+    .allsort-btn{
+      display: block;
+      height:7px;
+      width: 7px;
+      position: absolute;
+      right:10px;
+      top:12px;
+      border: 1.5px solid #ffffff;
+      border-left:transparent;
+      border-bottom: transparent;
+      transition: transform .1s ease-in 0s;
+      transform: rotate(135deg);
+
+    }
+    &:hover{
+      .allsort-btn{
+        transform: rotate(-45deg);
+      }
+      
+    }
+  }
+}
+#menu_left{
+  // position: absolute;
+}
+#main{
+  background: #f6f6f6f6;
+  .main-wrap{
+    width: 1210px;
+    margin:0 auto;
+  }
+  .w1{
+    overflow: hidden;
+    background: #ffffff;
+  }
+}
+.detaillist{
+  padding-left: 10px;
+  height: 50px;
+  line-height: 50px;
+  overflow: hidden;
+  font-size: 13px;
+  color: #666666;
+  background: #f6f6f6f6;
+  .listtitle{
+    float: left;
+  }
+  .selectshop{
+    float: right;
+    color: #666666;
+    padding-left:20px;
+    position: relative;
+    i{
+      position: absolute;
+      top:15px;
+      left: 0;
+      display: inline-block;
+      height: 20px;
+      width: 20px;
+      background-image: url(../images/prodetailstyle.png);
+      background-position: -90px -27px;
+    }
+  }
+}
+#glassbox{
+  width: 370px;
+  position: relative;
+  float: left;
+  background: #ffffff;
+  .spic{
+    width: 350px;
+    height: 350px;
+    position: relative;
+    margin: 14px 0 14px 14px;
+    border: 1px solid #eee;
+    float: left;
+    img{
+      display: block;
+      width: 300px;
+      height: 300px;
+      border: 0px;
+      margin:25px;
+    }
+    .sf{
+      width: 80px;
+      height: 80px;
+      border: 1px solid #aaa;
+      background: #fff;
+      opacity: 0.5;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      visibility: hidden;
+    }
+  }
+  .bf{
+    width: 350px;
+    height: 400px;
+    border: 1px solid #eee;
+    float: left;
+    overflow: hidden;
+    position: absolute;
+    z-index: 10;
+    left: 365px;
+    visibility: hidden;
+    .bpic{
+      display: block;
+      height: 800px;
+      width:600px;
+      position: absolute;
+    }
+  }
+  .ulist{
+    position: absolute;
+    bottom: 20px;
+    left:0;
+    width: 370px;
+    height: 56px;
+    overflow: hidden;
+    a{
+      display: block;
+      float: left;
+      width: 22px;
+      height: 54px;
+      position: absolute;
+      z-index: 10;
+      top:0px;
+      line-height: 54px;
+      font-size: 30px;
+      font-weight: 50;
+      color: #999999;
+      // background-image: url("http://www.lab360.cn/images/pc/productnew/jiantou.png");
+    }
+    .list{
+      width: 300px;
+      position: relative;
+      float: left;
+      left:36px;
+      top:0;
+      height: 56px;
+      overflow: hidden;
+      ul{
+        overflow: hidden;
+        height: 56px;
+        list-style: none;
+        float: left;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        margin-left:-3px;
+      }
+      li{
+        float: left;
+        width: 52px;
+        height: 52px;
+        border:2px solid #ffffff;
+        margin-left:3px;
+      }
+      .imgactive{
+        border:2px solid #e4393c;
+      }
+    }
+    img{
+      width: 52px;
+      height: 52px;
+    }
+  }
+  .leftbtn{
+    left:10px;
+    background-position: 0 -53.8px;
+  }
+  .rightbtn{
+    right: 5px;
+    background-position:-78px 0;
+
+  }
+}
+.detailinform{
+  float: left;
+  height: auto;
+  width: 588px;
+  padding-left: 10px;
+  background: #ffffff;
+  padding-right: 36px;
+}
+.pname{
+  font-weight: 600;
+  font-size:20px;
+  padding: 25px 75px 0px 0;
+  height: 30px;
+  line-height: 30px;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  display: -webkit-box; /** 对象作为伸缩盒子模型显示 **/
+  -webkit-box-orient: vertical; /** 设置或检索伸缩盒对象的子元素的排列方式 **/
+  -webkit-line-clamp: 1; /** 显示的行数 **/
+  overflow: hidden; 
+}
+.pfunction{
+  color: Red;
+  font-size: 14px;
+  margin: 0 0 10px 0px;
+}
+
+.pinform{
+  width:100%;
+  a{
+      color:#3072C1;
+      cursor: pointer;
+    }
+  .market-price{
+    background: url("http://www.lab360.cn/images/pc/productnew/laibaobj.jpg") no-repeat;
+    color: #999999;
+    line-height: 30px;
+    
+    div{
+      padding-top:8px;
+      height: 35px;
+      line-height: 30px;
+    }
+    span{
+      margin-right: 20px;
+    }
+  }
+  .online-price{
+    position: relative;
+    top: -1px;
+    margin-right: 10px;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 6px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #e01222;
+    color: #fff;
+    border: 1px solid #df3033;
+    font-weight: normal;
+  }
+}
+.other-service{
+  margin-top:5px; 
+  line-height: 30px;
+  color: #666666;
+  span{
+    margin-right:15px;
+    padding-left: 20px;
+    display: inline-block;
+    position: relative;
+  }
+  b{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url("http://www.lab360.cn/images/pc/productnew/xunjiagif.gif") no-repeat;
+    position: absolute;
+    top:5px;
+    left: 0;
+  }
+}
+.xuxian{
+  margin-top: 3px;
+  height: 5px;
+  width: 100%;
+  background: url("http://www.lab360.cn/images/newproductdtail/dotted.png") repeat-x;
+}
+.model{
+  color: #999999;
+  overflow: hidden;
+}
+.modeltext{
+  float: left;
+  span{
+    margin-right: 20px;
+  }
+}
+.modelul{
+  width: 500px;
+  float: left;
+  height: auto;
+  overflow: hidden;
+  display: inline;
+  margin-top: 3px;
+  margin-left: -5px;
+  li{
+    position: relative;
+    float: left;
+    height: 38px;
+    line-height: 22px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    display: inline;
+    width: auto;
+    margin-right: 10px;
+    a{
+      text-decoration: none;
+      color: #666;
+      font-size: 12px;
+      display: block;
+      padding: 5px;
+      border: 1px solid #ccc;
+      &:hover{
+        border-color: red;
+        color: red;
+      }
+    }
+    b{
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      overflow: hidden;
+      bottom: 4px;
+      right: 0px;
+      background-position: -229px -54px;
+      background-repeat: no-repeat;
+      // display: none;
+    }
+    .checkactive{
+      background-image: url('../images/prodetailstyle.png');
+    }
+  }
+}
+.num{
+  color: #999999;
+  overflow: hidden;
+  line-height: 30px;
+  .numtext{
+    float: left;
+    span{
+      margin-right: 20px;
+    }
+  }
+  .numbox{
+    position: relative;
+    float: left;
+    margin-right: 20px;
+    margin-left: -3px;
+    a{
+      text-align: center;
+      float: left;
+      position: absolute;
+      z-index: 2;
+      display: block;
+      height: 15px;
+      width: 13px;
+      line-height: 15px;
+      background: #f1f1f1;
+      overflow: hidden;
+      border: 1px solid #ccc;
+      white-space: normal;
+      text-decoration: none;
+      color: #666;
+    }
+    .increase{
+      left: 35px;
+    }
+    .reduce {
+      top: 16px;
+      left: 35px;
+    }
+  }
+  .numinput{
+    float: left;
+    display: block;
+    width: 34px;
+    height: 31px;
+    line-height: 32px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-right: none;
+  }
+  .numcount{
+    float: left;
+    em{
+      color: #e01222;
+      font-style: normal;
+    }
+  }
+}
+.addbtn{
+  height: 35px;
+  a{
+    display: block;
+    cursor: pointer;
+    color: #df3033;
+    background: #ffeded;
+    width: 110px;
+    height: 31px;
+    text-align: center;
+    font-size: 15px;
+    line-height: 33px;
+    border: 1px solid #df3033;
+    margin-left:65px;
+    margin-top:10px;
+    }
+  
+}
+.payways{
+  margin-top:10px;
+  height: 30px;
+  line-height: 30px;
+  .paywaystext{
+    color: #999999;
+    margin-right: 15px;
+  }
+  a{
+    display: inline-block;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+  }
+  b{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top:5px;
+    left: 0;
+    background-image: url('../images/prodetailstyle.png');
+  }
+  .zfb{
+    b{
+      background-position: -191px -20px;
+    }
+    
+  }
+  .wechat{
+    b{
+      background-position: -21px -23px;
+    }
+    
+
+  }
+}
+
+.addinform{
+  float: left;
+  width:205px;
+  height: 425px;
+  padding-top: 15px;
+  background: #ffffff;
+  border-left: 1px dashed #dddddd;
+}
+.smalltitle{
+  background: #f6f6f6f6;
+  padding-top: 5px;
+  padding-left: 10px;
+  display: block;
+  font-size: 15px;
+  color: #666;
+  font-weight: bold;
+  height: 30px;
+}
+.smallinform{
+}
+.brand{
+  text-align: center;
+  .brandname{
+    padding-top:10px;
+    span{
+      display: inline-block;
+      border-bottom: 1px dashed #dddddd;
+      width: 25px;
+      margin-left:30px;
+    }
+    .nametext{
+        width: 50px;
+        border: none;
+        margin: 0;
+        
+    }
+  }
+  .smallinform{
+    padding-top:10px;
+    height:100px;
+    img{
+      width:120px;
+      height: 30px;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+}
+.guesswant{
+  width:205px;
+  text-align: center;
+  overflow: hidden;
+ li{
+   float: left;
+   width: 50%;
+   height:30px;
+   line-height:30px;
+ }
+}
+
+// 遮罩样式
+#shade{
+  width: 100%;
+  height:2165px;
+  position: absolute;
+  top:0;
+  left:0;
+  background:rgba(17, 17, 17, 0.3);
+  z-index: 99;
+}
+#remindbox{
+  margin-top:0;
+  position: fixed;
+  z-index: 100;
+  height: 450px;
+  width: 350px;
+  color: #e4393c;
+  left: 530px;
+  top:150px;
+  background: #ffffff;
+  text-align: center;
+  .accountlogin{
+    margin-top:0;
+    position: absolute;
+    top:0;
+    left: 0;
+  }
+  .loginbottom .threelogin {
+    margin-left: 25px;
+    width: 150px;
+    font-size: 15px;
+    margin: 5px;
+    color: #7f7f7f;
+    margin-top:20px;
+    text-align: left;
+  }
+  .close{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: 0px;
+    top:0;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    color:#dddddd;
+    cursor: pointer;
+    &:hover{
+      color: #ffffff;
+      background:#df3033;
+    }
+  }
+}
+.hahaha{
+  padding-top:20px;
+  background: #ffffff;
+}

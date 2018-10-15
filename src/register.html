@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>用户注册</title>
+  <link rel="stylesheet" href="css/register.css">
+  <style>
+    .error{
+        color:brown;
+      }
+      .valid{
+        display:inline-block;
+      }
+  </style>
+</head>
+
+<body>
+  <div class="top">
+    <div class="topinner">
+      <div class="top-left">
+        <img src="images/logo.png">
+        <span>欢迎注册</span>
+      </div>
+      <div class="top-right">
+        <span>已有账号？<a href="http://10.31.162.171/UNIT2/lab/src/login.html">请登录</a></span>
+      </div>
+    </div>
+  </div>
+  <div class="main">
+    <div class="bar-list">
+      <ul>
+        <li class="select"><i>1</i>填写账号信息</li>
+        <li class="end"><i>&nbsp;</i>注册成功</li>
+      </ul>
+    </div>
+    <!-- 表单 -->
+    <form method="post" action="../php/reg.php" id='form1'>
+      <div class="content">
+        <dl class="form-group">
+          <dt>用户名：</dt>
+          <dd>
+            <input type="text" id="username" name="username" placeholder="请输入用户名">
+            <label id="username-error" class="error Validform_checktip" for="username">(必填，3-15字符长度，支持汉字、字母、数字及_)</label>
+          </dd>
+        </dl>
+        <dl class="form-group">
+          <dt>密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码：</dt>
+          <dd>
+            <input name="password" id="password" type="password" class="input" placeholder="输入登录密码">
+            <label id="password-error" class="error Validform_checktip"  for="password">(请输入6-20位的登录密码)</label>
+          </dd>
+        </dl>
+        <dl class="form-group">
+          <dt>确认密码：</dt>
+          <dd>
+            <input type="password" name="repass" id="repass">
+            <label class="Validform_checktip error" id="repass-error" for="repass">请再次输入登录密码</label>
+          </dd>
+        </dl>
+        <dl class="form-group" style="display:none">
+          <dt>验 证 码：</dt>
+          <dd>
+            <input name="txtCode" id="txtCode" type="text" class="input code" placeholder="输入验证码" datatype="s4-20"
+              nullmsg="请输入右边显示的验证码" sucmsg=" " ajaxurl="/tool/submit_ajax.ashx?action=valiTxtCode">
+            <a class="send" href="javascript:;">
+              <img src="http://passport.lab360.cn/tool/verify_code.ashx" width="80" height="22">
+            </a><span class="Validform_checktip" id="vlCode"></span>
+          </dd>
+        </dl>
+        <dl class="form-group">
+          <dt>邮箱：</dt>
+          <dd>
+					  <input type="text" name="email" id="email"/>
+					  <label id="email-error" class="error Validform_checktip" for="email">(必填)</label>
+          </dd>
+        </dl>
+        <dl class="form-group" style="display:none">
+          <dt>短信验证码：</dt>
+          <dd class="valGroup-item-2 formControls inline-block">
+            <input name="txtTelCode" type="text" id="txtTelCode" class="input code" datatype="n6" nullmsg="请输入手机收到的短信验证码！"
+              errormsg="请输入手机收到的短信验证码！" sucmsg="<font color='green'>恭喜您,验证成功！</font>">
+            <div style="display: inline-block; vertical-align: middle;height: 38px;" id="divSend">
+              <a class="telcode" id="getCode" href="javascript:">获取短信验证码</a>
+            </div>
+            <span class="Validform_checktip"></span>
+          </dd>
+        </dl>
+        <dl class="form-group-2">
+          <dt></dt>
+          <dd>
+            <input id="chkAgree" name="chkAgree" type="checkbox" value="1">
+            <label for="chkAgree">
+              我已仔细阅读并接受 <a href="javascript:;">注册许可协议</a>
+            </label>
+            <label id="chkAgree-error" class="error Validform_checktip" for="chkAgree"></label>
+            <span class="Validform_checktip"></span>
+          </dd>
+        </dl>
+        <dl>
+          <dt></dt>
+          <dd>
+            <input id="submit" name="submit" type="submit" value="立即注册" class="submit">
+          </dd>
+        </dl>
+      </div>
+    </form>    <!--  -->
+    <div class="onlinekefu">
+      <i></i>
+      <span>有问题？<br>
+        找客服
+      </span>
+    </div>
+  </div>
+  <div id="footer"></div>
+  <script  src="script/thirdplugins/jquery.js"></script>
+  <script  src="script/thirdplugins/jquery.validate.js" charset="utf-8"></script>
+  <script src="script/thirdplugins/jquery.cookie.js"></script>
+  <script type="text/javascript" src="script/register.js"></script>
+</body>
+
+</html>

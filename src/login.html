@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>用户登录</title>
+  <link rel="stylesheet" href="css/rest.css">
+  <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+  <!-- 头部 -->
+  <div id="topcontent">
+    <div class="hleft">
+      <a class="logo" href="http://www.lab360.cn/Default.aspx" target="_blank">
+        <img src="http://passport.lab360.cn/image/login/logo.jpg">
+      </a>
+    </div>
+    <div class="hright">
+      <div class="zaixianzixun">
+        <div class="kefutouxiang">
+        </div>
+        <a id="OnLine" class="zaixianzixuna" href="javascript:;">在线咨询</a>
+      </div>
+      <div class="dianhua">
+        <div class="teltouxiang">
+        </div>
+        <span class="tel">400-6186-155</span>
+      </div>
+    </div>
+  </div>
+  <!-- 主体 -->
+  <div id="maincontent">
+    <!-- 轮播图 -->
+    <div class="lubo">
+      <ul class="lubo_box">
+        <li>
+          <a href="javascript:;" class="bgpic1">
+            <!-- <img src="http://passport.lab360.cn/images/bj1.jpg"> -->
+          </a>
+        </li>
+        <li>
+          <a href="javascript:;" class="bgpic2">
+            <!-- <img src="http://passport.lab360.cn/images/bj2.jpg"> -->
+          </a>
+        </li>
+      </ul>
+    </div>
+    <form method="post" onsubmit="return false;">
+      <div class="accountlogin">
+      <div class="logintop">
+        <div class="accounttext">账户登录</div>
+        <!-- <div class="yanzhengmatext">验证码登录</div> -->
+      </div>
+      <div class="logincenter">
+        <div class="logincontent">
+          <div class="error">
+            <span id="msgtip"  class="errortext">请输入用户名和密码</span>
+          </div>
+          <!-- 账号密码 -->
+          <div class="zhanghao">
+            <label class="inputimg"></label>
+            <input name="username" id="username" class="inputusername" placeholder="用户名" type="text">
+          </div>
+          <div class="zhanghao passworddiv">
+            <label class="inputimg pwdimg">
+            </label>
+            <input name="password" id="password" class="inputusername" placeholder="密码" type="password">
+          </div>
+          <!-- 验证码 -->
+          <!-- <div class="yanzhengma" >
+            <input type="text" placeholder="输入验证码" class="inputusername addyzm">
+            <a href="javascript:;">
+              <img class="yzmimg" style="vertical-align:middle" src="http://passport.lab360.cn/tool/verify_code.ashx">
+            </a>
+          </div> -->
+          <!-- 记住密码 -->
+          <div class="jizhupwd">
+            <!-- <div class="jizhuanniu">
+              <section class="model-1">
+                <div class="changecheckbox">
+                  <input name="zddl" id="zddl" type="checkbox"><label></label>
+                </div>
+              </section>
+            </div> -->
+            <div class="jizhuanniu">
+              <input type="checkbox" class="checkbox">
+            </div>
+            <div class="jizhutext">
+              <label>
+                记住我
+              </label>
+            </div>
+            <div class="wangjipwddiv">
+              <a href="javascript:;" class="wangjipwd">忘记密码 </a>
+            </div>
+          </div>
+        </div>
+        <input class="sub" id="sub" type="submit" value="登录">
+      </div>
+      <div class="loginbottom">
+        <div class="threelogin">使用合作网站账号登录来宝</div>
+        <div class="rightregister">
+          <div class="rightregisterimg"></div>
+          <a href="register.html" class="rightregistertext">立即注册</a>
+        </div>
+      </div>
+    </div>
+    </form>
+    
+  </div>
+  <!-- 底部 -->
+  <div id="footercontent"></div>
+  <script type="text/javascript" src="script/thirdplugins/jquery.js"></script>
+  <script src="script/thirdplugins/lunbo.js"></script>
+  <script src="script/thirdplugins/jquery.cookie.js"></script>
+  <script type="text/javascript" src="script/login.js"></script>
+</body>
+
+</html>

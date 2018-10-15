@@ -3,26 +3,54 @@
   <div class="headertop">
     <ul class="hlist">
       <li>
-        <a href="javascript:;">登陆</a>&nbsp;
-        <a href="javascript:;">注册</a>
+        <a class="topregister" href="http://10.31.162.171/UNIT2/lab/src/register.html">注册</a>
+        <a class="toplogin" href="http://10.31.162.171/UNIT2/lab/src/login.html">登陆</a>&nbsp;
       </li>
-      <li>
-        <i></i>
+      <li class='hlibox'>
+        <i class="dd">
+          <span>会员服务</span>
+          <span>我的订单</span>
+        </i>
         <a href="javascript:;">会员中心</a>
         <b></b>
       </li>
-      <li>
-        <i></i>
+      <li class='hlibox'>
+        <i class="dd">
+          <span>网站导航</span>
+          <span>用户场景</span>
+          <span>活动专题</span>
+          <span>技术文档</span>
+          <span>产品价格单</span>
+          <span>场景供应</span>
+        </i>
         <a href="javascript:;">网站导航</a>
         <b></b>
       </li>
-      <li>
+      <li class='hlibox'>
         <i></i>
         <a href="javascript:;">手机来宝</a>
         <b></b>
+        <div class="dd lh mobilelab">
+          <div class="qr-item qr-jd-app">
+            <div class="qr-img">
+              <img id="app-qrcode-img" width="76" height="76" alt="手机来宝" src="http://www.lab360.cn/images/1445328488.png">
+            </div>
+            <div class="qr-ext">
+              <strong style="color:red">来宝商城APP</strong> <a href="javascript:;" target="_blank" class="btn-app-apple"></a>
+              <a href="https://www.pgyer.com/fenxiao2" target="_blank" class="btn-app-android">
+              </a>
+            </div>
+          </div>
+        </div>
       </li>
-      <li>
-        <i></i>
+      <li class='hlibox'>
+        <i>
+        </i>
+        <div class=" dd addlab">
+          <img src="http://www.lab360.cn/image/weixin.png">
+        </div>
+
+
         <a href="javascript:;">关注来宝</a>
         <b></b>
       </li>
@@ -39,6 +67,7 @@
       <span class="logotext">实验室采购平台</span>
     </div>
     <div class="headermid_mid left">
+      <!-- 搜索框 -->
       <div class="searchbox">
         <div class="form">
           <input type="text" class="text" id="key" autocomplete="off" placeholder="产品 / 品牌 / 型号 / 实验室">
@@ -50,21 +79,21 @@
       </div>
       <!-- 搜索热词 -->
       <div id="hotwords">
-        <a href="/ProductC2-232-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" target="_blank">
-          离心机</a>
-        <a href="/ProductC2-15-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" target="_blank">灭菌器</a>
-        <a href="/scene/SceneImage-11.html" target="_blank">食品检测实验室</a>
-        <a href="/scene/SceneImage-12.html" target="_blank">食品微生物实验室</a>
-        <a href="/BrandList-75.html" target="_blank">松下</a>
-        <a href="/BrandList-69.html" target="_blank">赛多利斯</a>
+        <a href="javascript:;" target="_blank">离心机</a>
+        <a href="javascript:;" target="_blank">灭菌器</a>
+        <a href="javascript:;" target="_blank">食品检测实验室</a>
+        <a href="javascript:;" target="_blank">食品微生物实验室</a>
+        <a href="javascript:;" target="_blank">松下</a>
+        <a href="javascript:;" target="_blank">赛多利斯</a>
       </div>
     </div>
     <!-- 右边购物车 -->
     <div class="headermid_right left">
       <div class="myshopcar">
-        <a href="#" style="line-height:30px;color:#666 ;display: inline-block;" class="myshopcartext">我的购物车</a>
+        <a href="http://10.31.162.171/UNIT2/lab/src/cart.html" style="line-height:30px;color:#666 ;display: inline-block;"
+          class="myshopcartext">我的购物车</a>
         <div class="shopping" style="display:inline-block">
-          <span id="cartnum">2</span>
+          <span id="cartnum"></span>
         </div>
         <b></b>
       </div>
@@ -76,9 +105,494 @@
 <!-- 头部-底部-主导航 -->
 <div id="mainnav">
   <ul class="nav_list">
+    <li><a href="http://10.31.162.171/UNIT2/lab/src/">首页</a></li>
     <li><a href="javascript:;">产品报价</a></li>
     <li><a href="javascript:;">来宝服务</a></li>
     <li><a href="javascript:;">博科集团</a></li>
   </ul>
 </div>
+<!-- 二级导航 -->
+<div id="menu_content_box">
+  <div class="allsort">
+    <span>全部产品分类</span>
+    <i class="allsort-btn"></i>
+  </div>
+  <div id="menu_content" class="menu_content">
+    <ul>
+      <li class="liitem">
+        <div class="nav_t">
+
+          <input id="ptlist-304" type="hidden" class="aa">
+          <h3 style="line-height:normal">
+            •&nbsp;常用设备</h3>
+          <i class="i2">&gt;</i>
+          <p class="nav_p">
+
+            <em><a href="JavaScript:;" target="_blank">
+                离心机</a></em>
+
+            <em><a href="JavaScript:;" target="_blank">
+                高压蒸汽灭菌器</a></em><br>
+
+            <em><a href="JavaScript:;" target="_blank">
+                生化培养箱</a></em>
+
+            <em><a href="JavaScript:;" target="_blank">
+                电阻炉/马弗炉</a></em><br>
+
+          </p>
+        </div>
+        <div class="second_nav">
+          <div class="nav2_left">
+            <dl>
+              <dt>
+                <a href="#" title="制冷设备">制冷设备</a>
+              </dt>
+              <dd>
+                <em>
+                  <a href="" title="低温冰箱" target="_blank">低温冰箱</a>
+                </em>
+                <em>
+                  <a href="" title="液氮罐" target="_blank">液氮罐</a>
+                </em>
+                <em>
+                  <a href="" title="药品冷藏箱" target="_blank">药品冷藏箱</a>
+                </em>
+                <em>
+                  <a href="" title="制冰机" target="_blank">制冰机</a>
+                </em>
+                <em>
+                  <a href="" title="药品阴凉柜" target="_blank">药品阴凉</a>
+                </em>
+              </dd>
+            </dl>
+            <dl>
+              <dt>
+                <a href="#" title="样品处理">样品处理</a>
+              </dt>
+              <dd>
+                <em>
+                  <a href="" title="离心机" target="_blank">离心机</a>
+                </em>
+                <em>
+                  <a href="" title="恒温摇床" target="_blank">恒温摇床</a>
+                </em>
+                <em>
+                  <a href="" title="磁力搅拌器" target="_blank">磁力搅拌器</a>
+                </em>
+                <em>
+                  <a href="" title="冷冻干燥机" target="_blank">冷冻干燥机</a>
+                </em>
+                <em>
+                  <a href="" title="混合器" target="_blank">混合器</a>
+                </em>
+              </dd>
+            </dl>
+            <dl>
+              <dt>
+                <a href="#" title="清洗消毒">清洗消毒</a> </dt>
+              <dd>
+                <em>
+                  <a href="" title="高压蒸汽灭菌器" target="_blank">高压蒸汽灭菌器</a></em><em><a href="" title="超声波清洗机" target="_blank">超声波清洗机</a></em><em><a
+                    href="" title="脉动真空灭菌器" target="_blank">脉动真空灭菌器</a></em><em><a href="" title="卡式灭菌器" target="_blank">卡式灭菌器</a></em><em><a
+                    href="" title="红外线灭菌器" target="_blank">红外线灭菌器</a></em></dd>
+            </dl>
+            <dl>
+              <dt>
+                <a href="#" title="安全|净化">安全|净化</a>
+              </dt>
+              <dd>
+                <em>
+                  <a href="" title="生物安全柜" target="_blank">生物安全柜</a>
+                </em>
+                <em>
+                  <a href="" title="空气消毒机" target="_blank">空气消毒机</a>
+                </em>
+                <em>
+                  <a href="" title="超净工作台" target="_blank">超净工作台</a>
+                </em>
+                <em>
+                  <a href="" title="化学品安全储存柜" target="_blank">化学品安全储存柜</a>
+                </em>
+                <em>
+                  <a href="" title="通风柜" target="_blank">通风柜</a>
+                </em>
+              </dd>
+            </dl>
+            <dl>
+              <dt><a href="#" title="恒温|干燥|加热">恒温|干燥|加热</a> </dt>
+              <dd><em><a href="" title="鼓风干燥箱" target="_blank">鼓风干燥箱</a></em><em><a href="" title="二氧化碳培养箱" target="_blank">二氧化碳培养箱</a></em><em><a
+                    href="" title="生化培养箱" target="_blank">生化培养箱</a></em><em><a href="" title="电热恒温培养箱" target="_blank">电热恒温培养箱</a></em><em><a
+                    href="" title="水浴锅" target="_blank">水浴锅</a></em></dd>
+            </dl>
+            <dl>
+              <dt><a href="#" title="泵">泵</a> </dt>
+              <dd><em><a href="" title="真空泵" target="_blank">真空泵</a></em><em><a href="" title="蠕动泵" target="_blank">蠕动泵</a></em><em><a
+                    href="" title="循环水真空泵" target="_blank">循环水真空泵</a></em><em><a href="" title="低温冷却循环泵 " target="_blank">低温冷却循环泵
+                  </a></em><em><a href="" title="实验室注射泵" target="_blank">实验室注射泵</a></em></dd>
+            </dl>
+            <dl>
+              <dt>
+                <a href="#" title="移液操作">移液操作</a>
+              </dt>
+              <dd>
+                <em>
+                  <a href="" title="单道移液器" target="_blank">单道移液器</a></em><em><a href="" title="多道移液器" target="_blank">多道移液器</a></em><em><a
+                    href="" title="移液器支架" target="_blank">移液器支架</a></em><em><a href="" title="瓶口分液器" target="_blank">瓶口分液器</a></em><em><a
+                    href="" title="连续等分移液器" target="_blank">连续等分移液器</a></em>
+              </dd>
+            </dl>
+            <dl>
+              <dt>
+                <a href="#" title="实验室家具">实验室家具</a> </dt>
+              <dd>
+                <em>
+                  <a href="" title="实验台" target="_blank">实验台</a></em><em><a href="" title="防潮柜" target="_blank">防潮柜</a></em><em><a
+                    href="" title="标本柜" target="_blank">标本柜</a></em><em><a href="" title="病理柜" target="_blank">病理柜</a></em><em><a
+                    href="" title="抽气罩" target="_blank">抽气罩</a></em></dd>
+            </dl>
+            <dl>
+              <dt>
+                <a href="#" title="小型器材">小型器材</a> </dt>
+              <dd>
+                <em>
+                  <a href="" title="天平" target="_blank">天平</a></em><em><a href="" title="UPS不间断电源" target="_blank">UPS不间断电源</a></em><em><a
+                    href="" title="稳压器" target="_blank">稳压器</a></em><em><a href="" title="天平密度组件" target="_blank">天平密度组件</a></em><em><a
+                    href="" title="衡器" target="_blank">衡器</a></em></dd>
+            </dl>
+            <dl>
+              <dt>
+                <a href="#" title="纯化合成">纯化合成</a> </dt>
+              <dd>
+                <em>
+                  <a href="" title="纯水机与超纯水机" target="_blank">纯水机与超纯水机</a></em><em><a href="" title="旋转蒸发仪" target="_blank">旋转蒸发仪</a></em><em><a
+                    href="" title="蒸馏水器" target="_blank">蒸馏水器</a></em><em><a href="" title="反应釜" target="_blank">反应釜</a></em></dd>
+            </dl>
+            <dl>
+              <dt>
+                <a href="#" title="实验室气源">实验室气源</a>
+              </dt>
+              <dd>
+                <em>
+                  <a href="" title="氢气发生器" target="_blank">氢气发生器</a>
+                </em>
+                <em><a href="" title="臭氧发生器" target="_blank">臭氧发生器</a></em><em><a href="" title="空气发生器" target="_blank">空气发生器</a></em><em><a
+                    href="" title="氮气发生器" target="_blank">氮气发生器</a></em><em><a href="" title="氧气发生器" target="_blank">氧气发生器</a></em></dd>
+            </dl>
+            <dl>
+              <dt>
+                <a href="#" title="民用品">民用品</a>
+              </dt>
+              <dd>
+                <em>
+                  <a href="" title="扳手" target="_blank">扳手</a>
+                </em>
+                <em>
+                  <a href="" title="取单机" target="_blank">取单机</a>
+                </em>
+                <em>
+                  <a href="" title="镜头" target="_blank">镜头</a>
+                </em>
+              </dd>
+            </dl>
+          </div>
+
+          <div class="nav2_right layer_right" id="divBrandsID">
+            <div class="eightbrands">
+              <ul class="eightbrandsul">
+                <li>
+                  <a href="javascript:;" title="珠江/ZHUJIANG" id="typebrand3752">
+                    <img src="http://www.lab360.cn/uploadfile/201803/201803061518308447.jpg" alt="珠江/ZHUJIANG">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" title="广世生物" id="typebrand77">
+                    <img src="http://www.lab360.cn/uploadfile/201710/201710241520406582.jpg" alt="广世生物">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" title="上海博迅" id="typebrand77">
+                    <img src="http://www.lab360.cn/uploadfile/201710/201710081349194291.png" alt="上海博迅">
+                  </a>
+                </li>  
+                <li>
+                  <a href="#" title="上海博迅" id="typebrand77">
+                    <img src="http://www.lab360.cn/uploadfile/201710/201710081354548763.png" alt="上海博迅">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" title="菲斯福" id="typebrand77">
+                    <img src="http://www.lab360.cn/uploadfile/201803/201803130852157701.jpg" alt="菲斯福">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" title="仪器祐宁" id="typebrand77">
+                    <img src="http://www.lab360.cn/uploadfile/201706/201706241136522374.png" alt="仪器祐宁">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" title="上海博迅" id="typebrand77">
+                    <img src="http://www.lab360.cn/uploadfile/201710/201710250902271140.jpg" alt="上海博迅">
+                  </a>
+                </li>
+                <li>
+                  <a href="#" title="良平" id="typebrand77">
+                    <img src="http://www.lab360.cn/uploadfile/201108/2011811145515770.jpg" alt="良平">
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div class="brandsgg1">
+              <a href="#" id="typebrand75">
+                <img alt="定氮仪" src="http://www.lab360.cn/uploadfile/201809/201809030232513995.jpg"> </a>
+            </div>
+            <div class="brandsgg1">
+              <a href="#" id="typebrand76">
+                <img alt="农药残留检测仪" src="http://www.lab360.cn/uploadfile/201809/201809030233594705.jpg">
+              </a>
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="">
+        <div class="nav_t">
+
+          <input id="ptlist-315" type="hidden" class="aa">
+          <h3 style="line-height:normal">
+            •&nbsp;生命科学</h3>
+          <i class="i2">&gt;</i>
+          <p class="nav_p">
+
+            <em><a href="#" target="_blank">
+                DNA测序仪</a></em>
+
+            <em><a href="#" target="_blank">
+                液相色谱仪</a></em><br>
+
+            <em><a href="#" target="_blank">
+                电泳仪</a></em>
+
+            <em><a href="#" target="_blank">
+                基因枪/导入仪</a></em><br>
+
+          </p>
+        </div>
+        <div class="second_nav">
+            <div class="nav2_left">
+              <dl>
+                <dt>
+                  <a href="#" title="制冷设备">动物设备</a>
+                </dt>
+                <dd>
+                  <em>
+                    <a href="" title="动物麻醉剂" target="_blank">动物麻醉剂</a>
+                  </em>
+                  <em>
+                    <a href="" title="脑立体定位仪" target="_blank">脑立体定位</a>
+                  </em>
+                  <em>
+                    <a href="" title="动物心电图机" target="_blank">动物心电图机</a>
+                  </em>
+                  <em>
+                    <a href="" title="制冰机" target="_blank">制冰机</a>
+                  </em>
+                  <em>
+                    <a href="" title="药品阴凉柜" target="_blank">药品阴凉</a>
+                  </em>
+                </dd>
+              </dl>
+              <dl>
+                <dt>
+                  <a href="#" title="细胞生物学仪器">细胞生物学仪器</a>
+                </dt>
+                <dd>
+                  <em>
+                    <a href="" title="离心机" target="_blank">离心机</a>
+                  </em>
+                  <em>
+                    <a href="" title="细胞计数器" target="_blank">细胞计数器</a>
+                  </em>
+                  <em>
+                    <a href="" title="磁力搅拌器" target="_blank">磁力搅拌器</a>
+                  </em>
+                  <em>
+                    <a href="" title="冷冻干燥机" target="_blank">冷冻干燥机</a>
+                  </em>
+                  <em>
+                    <a href="" title="混合器" target="_blank">混合器</a>
+                  </em>
+                </dd>
+              </dl>
+              <dl>
+                <dt>
+                  <a href="#" title="芯片系统">芯片系统</a> </dt>
+                <dd>
+                  <em>
+                    <a href="" title="点样仪" target="_blank">点样仪</a>
+                  </em>
+                    </dd>
+              </dl>
+              <dl>
+                <dt>
+                  <a href="#" title="分子生物学仪器">分子生物学仪器</a>
+                </dt>
+                <dd>
+                  <em>
+                    <a href="" title="电泳仪" target="_blank">电泳仪</a>
+                  </em>
+                  <em>
+                    <a href="" title="PCR仪" target="_blank">PCR仪</a>
+                  </em>
+                  <em>
+                    <a href="" title="凝胶成像系统" target="_blank">凝胶成像系统</a>
+                  </em>
+                  <em>
+                    <a href="" title="金属浴" target="_blank">金属浴</a>
+                  </em>
+                  <em>
+                    <a href="" title="分子杂交仪" target="_blank">分子杂交仪</a>
+                  </em>
+                </dd>
+              </dl>
+            </div>
+  
+            <div class="nav2_right layer_right" id="divBrandsID">
+              <div class="eightbrands">
+                <ul class="eightbrandsul">
+                  <li>
+                    <a href="javascript:;" title="珠江/ZHUJIANG" id="typebrand3752">
+                      <img src="http://www.lab360.cn/uploadfile/201803/201803061518308447.jpg" alt="珠江/ZHUJIANG">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" title="广世生物" id="typebrand77">
+                      <img src="http://www.lab360.cn/uploadfile/201710/201710241520406582.jpg" alt="广世生物">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" title="上海博迅" id="typebrand77">
+                      <img src="http://www.lab360.cn/uploadfile/201710/201710081349194291.png" alt="上海博迅">
+                    </a>
+                  </li>  
+                  <li>
+                    <a href="#" title="上海博迅" id="typebrand77">
+                      <img src="http://www.lab360.cn/uploadfile/201710/201710081354548763.png" alt="上海博迅">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" title="菲斯福" id="typebrand77">
+                      <img src="http://www.lab360.cn/uploadfile/201803/201803130852157701.jpg" alt="菲斯福">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" title="仪器祐宁" id="typebrand77">
+                      <img src="http://www.lab360.cn/uploadfile/201706/201706241136522374.png" alt="仪器祐宁">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" title="上海博迅" id="typebrand77">
+                      <img src="http://www.lab360.cn/uploadfile/201710/201710250902271140.jpg" alt="上海博迅">
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" title="良平" id="typebrand77">
+                      <img src="http://www.lab360.cn/uploadfile/201108/2011811145515770.jpg" alt="良平">
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="brandsgg1">
+                <a href="#" id="typebrand75">
+                  <img alt="定氮仪" src="http://www.lab360.cn/uploadfile/201809/201809030231555429.jpg"> </a>
+              </div>
+              <div class="brandsgg1">
+                <a href="#" id="typebrand76">
+                  <img alt="农药残留检测仪" src="http://www.lab360.cn/uploadfile/201809/201809030232114488.jpg">
+                </a>
+              </div>
+            </div>
+          </div>
+      </li>
+
+      <li class="">
+        <div class="nav_t">
+
+          <input id="ptlist-328" type="hidden" class="aa">
+          <h3 style="line-height:normal">
+            •&nbsp;理化仪器</h3>
+          <i class="i2">&gt;</i>
+          <p class="nav_p">
+
+            <em><a href="#" target="_blank">
+                水质分析仪</a></em>
+
+            <em><a href="#" target="_blank">
+                电位滴定仪</a></em><br>
+
+            <em><a href="#" target="_blank">
+                紫外可见分光光度计</a></em>
+
+            <em><a href="#" target="_blank">
+                色差仪</a></em><br>
+
+          </p>
+        </div>
+
+      </li>
+
+      <li class="">
+        <div class="nav_t">
+
+          <input id="ptlist-3950" type="hidden" class="aa">
+          <h3 style="line-height:normal">
+            •&nbsp;食品检测</h3>
+          <i class="i2">&gt;</i>
+          <p class="nav_p">
+
+            <em><a href="#" target="_blank">
+                凯氏定氮仪</a></em>
+
+            <em><a href="#" target="_blank">
+                重金属检测仪</a></em><br>
+
+            <em><a href="#" target="_blank">
+                食品安全综合分析仪</a></em>
+
+          </p>
+        </div>
+      </li>
+
+      <li class="">
+        <div class="nav_t">
+
+          <input id="ptlist-3951" type="hidden" class="aa">
+          <h3 style="line-height:normal">
+            •&nbsp;药物检测专用仪器</h3>
+          <i class="i2">&gt;</i>
+          <p class="nav_p">
+
+            <em><a href="#" target="_blank">
+                崩解仪</a></em>
+
+            <em><a href="#" target="_blank">
+                药物溶出仪</a></em><br>
+
+            <em><a href="#" target="_blank">
+                不溶性微粒检测仪</a></em>
+
+          </p>
+        </div>
+
+      </li>
+
+    </ul>
+    <div class="lastpt">
+      <h3>
+        <a href="/ProductType.html" id="menuAll2"><span style="color:#f0ff00 ;border-bottom: 1px solid #f0ff00">全部产品分类</span></a></h3>
+    </div>
+  </div>
+</div>
+
 <!-- 头部end -->
+
+<!--  -->

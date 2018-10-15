@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>购物车页面</title>
+  <link rel="stylesheet" href="css/cart.css">
+  <link rel="stylesheet" href="css/rest.css">
+</head>
+
+<body>
+  <div id="topcontent" style="height:169px;border-bottom: 2px solid #0368B8;"></div>
+  <div id="maincontent" class="cart">
+    <div class="w">
+      <!--购物车为空时显示的盒子-->
+      <div class="empty-cart">
+        <div class="empty-cart-msg">
+          购物车空空的哦~，去看看心仪的商品吧~
+          <a href="http://10.31.162.171/UNIT2/lab/src/index.html"style="color: #005ea7;">去购物></a>
+        </div>
+      </div>
+      <!--全部商品哪一行-->
+      <div class="cart-top" style="display: block;">
+        <div class="cart-top-left">
+          <a href=""><em>全部商品</em></a>
+        </div>
+        <div class="cart-top-right">
+          <span>配送至：</span>
+          <div class="jdarea">
+              <div class="areawrap">
+                  <div class="areatext">北京朝阳区三环到四环之间</div>
+                  <b></b>
+              </div>
+          </div>
+      </div>
+        <div class="footline">
+          <div class="line"></div>
+        </div>
+      </div>
+      <!--包裹购物车-->
+      <div class="cart-wrap" style="display: block;">
+        <div class="w">
+          <div id="jd-cart">
+            <div class="cartmain">
+              <div class="cart-thead">
+                <div class="cart-col t-checkbox">
+                  <div class="cart-checkbox">
+                    <input type="checkbox" checked="" name="" id="" class="allsel" value="" /> 全选
+                  </div>
+                </div>
+                <div class="cart-col t-goods">商品信息</div>
+                <div class="cart-col t-props"></div>
+                <div class="cart-col t-prices">单价(元)</div>
+                <div class="cart-col t-quantity">数量</div>
+                <div class="cart-col t-sum">小计(元)</div>
+                <div class="cart-col t-action">操作</div>
+              </div>
+              <div id="cart-list">
+                <div class="cart-item-list">
+                  <div class="cart-tbody">
+                    <div class="shop">
+                      <div class="cart-checkbox">
+                        <input type="checkbox" checked="" name="" id="" value="" />
+                      </div>
+                      <span class="shop-info">
+                        <a href=""></a>
+                      </span>
+                      <div class="shop-ex">
+                        <!-- 购满￥99.00 已免运费 -->
+                        <span class="tips-icon" data-tips="部分超重超大商品运费单独收取，不在本功能范围内，准确运费以结算页为准"></span>
+                      </div>
+                    </div>
+                    <div class="item-list">
+                      <div class="item-head">
+                        <div class="header-left">
+                          <a class="header-left-p1" href="">
+                            <span>
+                              积分
+                              <b></b>
+                            </span> 购满999.00元，可积分换购小礼物>
+                          </a>
+                          <a class="header-left-p2" href="">换购礼物</a>
+                          <a href="">去挑选></a>
+                        </div>
+                        <div class="header-price">
+                          <b></b>
+                        </div>
+                      </div>
+                      <div class="goods-item goods-item-sele" style="display: none;">
+                        <div class="goods-info">
+                          <div class="cell b-checkbox">
+                            <div class="cart-checkbox">
+                              <input type="checkbox" checked="" name="" id="" value="" />
+                              <span class="line-circle"></span>
+                            </div>
+                          </div>
+                          <div class="cell b-goods">
+                            <div class="goods-name">
+                              <div class="goods-pic">
+                                <a href=""><img src="" alt="" /></a>
+                              </div>
+                              <div class="goods-msg">
+                                <div class="goods-d-info">
+                                  <a href=""></a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="cell b-props">
+                            <div class="prop-text">合规公司：山东博科科学仪器</div>
+                            <div class="prop-text">精度:0.1mg/万分之一 
+                              最大量程:50～99g 100～199g 200～299g </div>
+
+                          </div>
+                          <div class="cell b-price">
+                            <strong>在线询价</strong>
+                            <a class="sales-promotion" href="">
+                              促销优惠
+                              <b></b>
+                            </a>
+                            <div class="sales-promotion-dropdown">
+                            </div>
+                          </div>
+                          <div class="cell b-quantity">
+                            <div class="quantity-form">
+                              <a class="quantity-down" href="javascript:void(0)">-</a>
+                              <input type="text" value="1" />
+                              <a class="quantity-add" href="javascript:void(0)">+</a>
+                            </div>
+                            <div class="quantity-text">有货</div>
+                          </div>
+                          <div class="cell b-sum">
+                            <strong>在线询价</strong>
+                          </div>
+                          <div class="cell b-action">
+                            <a href="javascript:void(0)">删除</a>
+                            <a href="javascript:void(0)">添加收藏</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="cart-floatbar">
+            <div class="select-all">
+              <div class="cart-checkbox">
+                <input type="checkbox" checked="" name="" id="" class="allsel" value="" /> 全选
+              </div>
+            </div>
+            <div class="operation">
+              <a href="javascript:void(0)">删除选中的商品</a><a href="javascript:void(0)">移到我的关注</a>
+            </div>
+            <div class="toolbar-right">
+              <div class="btn-area">
+                <a href=""></a>
+              </div>
+              <div class="price-sum">
+                <span class="txt">总价（不含运费）：</span>
+                <span class="totalprice">在线询价</span>
+                <span class="txt">已节省：</span>
+                <span class="totalsave">-￥0.00</span>
+              </div>
+              <div class="amount-sum">
+                已选择
+                <em>0</em> 件商品
+                <b></b>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="goods-list goods-selected">
+        <ul>
+
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div id="footercontent"></div>
+  <script src="script/thirdplugins/jquery.js"></script>
+  <script src="script/cart.js"></script>
+</body>
+
+</html>

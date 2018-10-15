@@ -13,46 +13,92 @@
 <body>
 	<!-- 头部内容 -->
 	<div id="topcontent"></div>
+	<!-- 头部固定部分 -->
+	<div id="head-fixed">
+		<div class="hf-container">
+			<div class="hf-logobox left">
+				<a href="#"><img src="images/logo.png"></a>
+			</div>
+			<div class="headermid_mid left hf-searchbox">
+				<!-- 搜索框 -->
+				<div class="searchbox">
+					<div class="form">
+						<input type="text" class="text" id="key" autocomplete="off" placeholder="产品 / 品牌 / 型号 / 实验室">
+						<input type="button" class="fangdajing" value="    ">
+						<a data-name="搜索按钮" data-model="页面主导航上面搜索" id="searchbutton">
+							<input type="button" value="搜索" class="button">
+						</a>
+					</div>
+				</div>
+				<!-- 搜索热词 -->
+				<div id="hotwords">
+					<a href="javascript:;" target="_blank">离心机</a>
+					<a href="javascript:;" target="_blank">灭菌器</a>
+					<a href="javascript:;" target="_blank">食品检测实验室</a>
+					<a href="javascript:;" target="_blank">食品微生物实验室</a>
+					<a href="javascript:;" target="_blank">松下</a>
+					<a href="javascript:;" target="_blank">赛多利斯</a>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- 左侧固定楼梯导航 -->
 	<div id="leftnav" class="leftnav">
 		<ul>
-			<li class="leftnav_item">
-				<a class="left_navbtn" href="javascript:;" target="_self">精选品类</a></li>
-			<li class="leftnav_item"><a class="left_navbtn" href="javascript:scroll('floor-brands');" target="_self">精选品牌</a></li>
+			<li class="leftnav_item loutili">
+				<a class="left_navbtn" href="javascript:;" target="_self">精选品类</a>
+			</li>
+			<li class="leftnav_item loutili">
+				<a class="left_navbtn" href="javascript:;" target="_self">精选品牌</a>
+			</li>
 
-			<li class="leftnav_item" id="leftnavhover-1"><a class="left_navbtn" href="javascript:;" target="_self">
+			<li class="leftnav_item loutili" id="leftnavhover-1"><a class="left_navbtn" href="javascript:;" target="_self">
 					<span>检测</span></a></li>
 
-			<li class="leftnav_item" id="leftnavhover-2"><a class="left_navbtn" href="javascript:;" target="_self">
+			<li class="leftnav_item loutili" id="leftnavhover-2"><a class="left_navbtn" href="javascript:;" target="_self">
 					<span>临床</span></a></li>
 
-			<li class="leftnav_item" id="leftnavhover-3"><a class="left_navbtn" href="javascript:scroll('floor-3');" target="_self">
-					<span>食品</span></a></li>
+			<li class="leftnav_item loutili" id="leftnavhover-3">
+				<a class="left_navbtn" href="javascript:;" target="_self">
+					<span>食品</span></a>
+			</li>
 
-			<li class="leftnav_item leftnav_item_on" id="leftnavhover-4"><a class="left_navbtn" href="javascript:scroll('floor-4');"
-				 target="_self">
+			<li class="leftnav_item loutili leftnav_item_on " id="leftnavhover-4"><a class="left_navbtn">
 					<span>生命科学</span></a></li>
 
-			<li class="leftnav_item" id="leftnavhover-5"><a class="left_navbtn" href="javascript:scroll('floor-5');" target="_self">
+			<li class="leftnav_item loutili" id="leftnavhover-5"><a class="left_navbtn" href="javascript:;" target="_self">
 					<span>发现好货</span></a></li>
 
-			<li class="leftnav_item leftnav_item_top"><a class=" left_navbtn leftnav_top " onclick="returntop()" target="_self">
+			<li class="leftnav_item leftnav_item_top"><a class=" left_navbtn leftnav_top ">
 					<span>顶部<i class="topbtn_arrow"></i></span></a></li>
 		</ul>
 	</div>
 	<!-- 轮播图位置 -->
-	<div class="banner_box" style="overflow:hidden;height: 471px">
-		<div id="banner">
-
-			<img src="images/banner.jpg">
+	<div class="banner_box" style="overflow:hidden;height: 171px">
+		<div id="banner" class="lubo">
+			<ul class="lubo_box">
+				<li style="background-image:url('http://www.lab360.cn/uploadfile/201809/201809300353001279.jpg')">
+					<a href="javascript:;" class="pic1"></a>
+				</li>
+				<li style="background-image: url('http://www.lab360.cn/uploadfile/201810/201810060503025011.jpg')">
+					<a href="javascript:;" class="pic2"></a>
+				</li>
+				<li style="background-image: url('http://www.lab360.cn/uploadfile/201810/201810060456428473.jpg')">
+					<a href="javascript:;" class="pic2"></a>
+				</li>
+				<li style="background-image: url('http://www.lab360.cn/uploadfile/201810/201810080823052193.jpg')">
+					<a href="javascript:;" class="pic2"></a>
+				</li>
+				<li style="background-image: url('http://www.lab360.cn/uploadfile/201810/201810080223257193.jpg')">
+					<a href="javascript:;" class="pic2"></a>
+				</li>
+			</ul>
 		</div>
 		<div class="clear"></div>
 	</div>
 	<!-- 主体内容 -->
 	<div id="main_content">
-		<div id="main_menu">
-			<div id="menu_left"></div>
-			<!-- <div id="menu_center">中间</div> -->
+		<div id="main_menu">-
 			<!-- 右侧登录+推送 -->
 			<div id="menu_right">
 				<div class="row1">
@@ -65,7 +111,7 @@
 						</a>
 					</div>
 					<div class="gerenxinxi">
-						<span>Hi&nbsp;&nbsp;,<a href="javascript:;" id="usernamefont" title="欢迎来到来宝" target="_blank">欢迎来到来宝</a></span><br>
+						<span class="wellcome">欢迎登录来宝！</span><br>
 						<!--头像图片 -->
 						<span class="jifenorhuiyuan">
 							<img src="images/lipin.png" alt="积分">
@@ -75,29 +121,38 @@
 					</div>
 					<div class="clear"></div>
 					<div class="loginregin">
-						<span>登录</span>
-						<span>注册</span>
+						<span>
+							<a href="http://10.31.162.171/UNIT2/lab/src/login.html" style="display:inline-block;width:100%;height:100%">登录</a></span>
+						<span>
+							<a href="http://10.31.162.171/UNIT2/lab/src/register.html" style="display:inline-block;width:100%;height:100%">注册</a>
+						</span>
+					</div>
+					<div class="admain" style="display:none">
+						<a href="javascript:;" class="exit">退出</a>
 					</div>
 				</div>
 				<div class="row2">
 					<ul class="row2_tab">
-						<li class="li1">商城公告</li>
+						<li class="li1 row2active">商城公告</li>
 						<li>|</li>
 						<li class="li1">促销活动</li>
 						<li>|</li>
 						<li class="li1">导航指南</li>
 					</ul>
 					<!-- 资讯内容 -->
-					<ul class="zixun">
-						<li>滚动的资讯内容</li>
-						<li>滚动的资讯内容</li>
-						<li>滚动的资讯内容</li>
-						<li>滚动的资讯内容</li>
-						<li>滚动的资讯内容</li>
-						<li>滚动的资讯内容</li>
-						<li>滚动的资讯内容</li>
-						<li>滚动的资讯内容</li>
-					</ul>
+					<div class="zixunbox">
+						<ul class="zixun">
+							<li><a href="javascript:;">来宝商城精彩亮相2018</a></li>
+							<li><a href="javascript:;">博科集团•来宝商城 | 中</a></li>
+							<li><a href="javascript:;">来宝商城与您相约2016</a></li>
+							<li><a href="javascript:;">北京科仪展---相约来宝</a></li>
+							<li><a href="javascript:;">第十五届中国国际科学</a></li>
+							<li><a href="javascript:;">来宝商城将参加-China </a></li>
+							<li><a href="javascript:;">来宝商城与您相约2019</a></li>
+							<li><a href="javascript:;">博科集团•来宝商城 | 中</a></li>
+						</ul>
+					</div>
+
 				</div>
 				<div class="row3">
 					<div class="smallbox lb">
@@ -110,14 +165,14 @@
 					</div>
 					<div class="smallbox lb">
 						<div class="text">
-							<img src="images/anquanzhifu.png" style="margin-top:10px">
+							<img src="images/anquanzhifu.png" style="margin-top:0px">
 						</div>
 						<p>安全支付</p>
 					</div>
 
 					<div class="smallbox rb">
 						<div class="text">
-							<img src="images/shouhou.png" style="margin-top:10px">
+							<img src="images/shouhou.png" style="margin-top:0px">
 						</div>
 						<p>售后无忧</p>
 					</div>
@@ -125,7 +180,7 @@
 			</div>
 		</div>
 		<!-- 精选品类 -->
-		<div class="select_sort">
+		<div class="louti select_sort">
 			<div class="sort_top">
 				<div class="icon"></div>
 				<span>精选品类</span>
@@ -145,24 +200,24 @@
 				</div>
 				<div class="sort_right">
 					<ul class="pic_list">
-						<li><a href="javascript:;" title="生物安全柜"><img src="images/sortlist-1.png" alt="生物安全柜"></a></li>
-						<li><a href="javascript:;"><img src="images/sortlist-1.png" alt="s生物安全柜"></a></li>
-						<li><a href="javascript:;"><img src="images/sortlist-1.png" alt="s生物安全柜"></a></li>
-						<li><a href="javascript:;"><img src="images/sortlist-1.png" alt="s生物安全柜"></a></li>
-						<li><a href="javascript:;"><img src="images/sortlist-1.png" alt="s生物安全柜"></a></li>
-						<li><a href="javascript:;"><img src="images/sortlist-1.png" alt="s生物安全柜"></a></li>
+						<!-- <li><a href="javascript:;" ><img ></a></li>
+						<li><a href="javascript:;"><img ></a></li>
+						<li><a href="javascript:;"><img ></a></li>
+						<li><a href="javascript:;"><img ></a></li>
+						<li><a href="javascript:;"><img ></a></li>
+						<li><a href="javascript:;"><img ></a></li> -->
 					</ul>
 				</div>
 			</div>
 		</div>
 		<!-- 精选品牌 -->
-		<div class="select_brands">
+		<div class="louti select_brands">
 			<div class="sort_top">
 				<div class="icon" id="brandsicon"></div>
 				<span>精选品牌</span>
 				<span>SELECT THE BRAND</span>
 				<div class="more" style="float:right">
-					<a href="javascript:;" target="_blank">more&nbsp;&gt;</a>
+					<a href="http://www.lab360.cn/Brands.aspx" target="_blank">more&nbsp;&gt;</a>
 				</div>
 			</div>
 			<div class="brands_foot">
@@ -175,11 +230,16 @@
 					</div>
 				</div>
 				<div class="brands_center">
-					<ul></ul>
+					<div class="brandswrap">
+						<div class="brandsfull"></div>
+						<div class="change">
+							<a class="brandhuanyipi" href="javascript:;">换一批</a>
+						</div>
+					</div>
 				</div>
 				<div class="brands_right">
 					<a href="javascript:;">
-						<img src="images/brands_right.jpg">
+						<img src="http://www.lab360.cn/uploadfile/201710/201710200835176599.jpg">
 					</a>
 				</div>
 			</div>
@@ -195,628 +255,1674 @@
 				</ul>
 			</div>
 		</div>
-		<div class="floors">
-			<div class="floor_1">
-				<div class="f1_left floor_left">
-					<h2>
-						<i>
-							<span>1F</span>
-						</i>
-					</h2>
-					<div class="floor_name">
-						药物分析与检验
-					</div>
-					<div class="floor_img">
-						<img src="http://www.lab360.cn/uploadfile/201808/201808301510556704.jpg">
-					</div>
-					<div class="floor_text">
-						<ul>
-							<li><a href="javascript:;" title="" target="_blank">设备1</a></li>
-							<li><a href="javascript:;" title="" target="_blank">设备1</a></li>
-							<li><a href="javascript:;" title="" target="_blank">设备1</a></li>
-							<li><a href="javascript:;" title="" target="_blank">设备1</a></li>
-							<li><a href="javascript:;" title="" target="_blank">设备1</a></li>
-							<li><a href="javascript:;" title="" target="_blank">设备1</a></li>
-							<li><a href="javascript:;" title="" target="_blank">设备1</a></li>
-							<li><a href="javascript:;" title="" target="_blank">设备1</a></li>
-							<li><a href="javascript:;" title="" target="_blank">设备1</a></li>
-							<li><a href="javascript:;" title="" target="_blank">设备1</a></li>
-							<li><a href="javascript:;" title="" target="_blank">设备1</a></li>
-							<li><a href="javascript:;" title="" target="_blank">设备1</a></li>
-						</ul>
-					</div>
+		<!-- <div class="floors"> -->
+		<div class="louti floor_1">
+			<div class="f1_left floor_left">
+				<h2>
+					<i>
+						<span>1F</span>
+					</i>
+				</h2>
+				<div class="floor_name">
+					药物分析与检验
 				</div>
-				<div class="f1_right floor_right">
-					<div class="tab_title">
-						<ul>
-							<li class="active"><a href="javascript:;">药厂理化实验室</a></li>
-							<li><a href="javascript:;">药厂微生物实验室</a></li>
-							<li><a href="javascript:;">生物制品厂</a></li>
-							<li><a href="javascript:;">血液制品厂</a></li>
-							<li><a href="javascript:;">中成药厂</a></li>
-							<li><a href="javascript:;">中药饮片厂</a></li>
-							<li><a href="javascript:;">抗生素厂</a></li>
-							<li><a href="javascript:;">注射剂的无菌检测</a></li>
-							<li><a href="javascript:;">片剂微生物限度检查</a></li>
-							<li><a href="javascript:;">样品前处理</a></li>
-						</ul>
-					</div>
-					<div class="tab_content">
-						<ul>
-							<li>
-								<div class="f_img">
-									<a href="javascript:;">
-										<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
-									</a>
-								</div>
-								<div class="f_name">
-									<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
-								</div>
-								<div class="f_price">
-									<a href="javascript:;">在线询价</a>
-								</div>
-							</li>
-							<li>
-								<div class="f_img">
-									<a href="javascript:;">
-										<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
-									</a>
-								</div>
-								<div class="f_name">
-									<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
-								</div>
-								<div class="f_price">
-									<a href="javascript:;">在线询价</a>
-								</div>
-							</li>
-							<li>
-								<div class="f_img">
-									<a href="javascript:;">
-										<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
-									</a>
-								</div>
-								<div class="f_name">
-									<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
-								</div>
-								<div class="f_price">
-									<a href="javascript:;">在线询价</a>
-								</div>
-							</li>
-							<li>
-								<div class="f_img">
-									<a href="javascript:;">
-										<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
-									</a>
-								</div>
-								<div class="f_name">
-									<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
-								</div>
-								<div class="f_price">
-									<a href="javascript:;">在线询价</a>
-								</div>
-							</li>
-							<li>
-								<div class="f_img">
-									<a href="javascript:;">
-										<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
-									</a>
-								</div>
-								<div class="f_name">
-									<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
-								</div>
-								<div class="f_price">
-									<a href="javascript:;">在线询价</a>
-								</div>
-							</li>
-							<li>
-								<div class="f_img">
-									<a href="javascript:;">
-										<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
-									</a>
-								</div>
-								<div class="f_name">
-									<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
-								</div>
-								<div class="f_price">
-									<a href="javascript:;">在线询价</a>
-								</div>
-							</li>
-							<li>
-								<div class="f_img">
-									<a href="javascript:;">
-										<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
-									</a>
-								</div>
-								<div class="f_name">
-									<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
-								</div>
-								<div class="f_price">
-									<a href="javascript:;">在线询价</a>
-								</div>
-							</li>
-							<li>
-								<div class="f_img">
-									<a href="javascript:;">
-										<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
-									</a>
-								</div>
-								<div class="f_name">
-									<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
-								</div>
-								<div class="f_price">
-									<a href="javascript:;">在线询价</a>
-								</div>
-							</li>
-						</ul>
-					</div>
+				<div class="floor_img">
+					<img src="http://www.lab360.cn/uploadfile/201808/201808301510556704.jpg">
+				</div>
+				<div class="floor_text">
+					<ul>
+
+						<li><a href="/ProductC2-770-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" title="微生物限度检测仪" target="_blank">
+								微生物限度检测仪</a></li>
+
+						<li><a href="/ProductC2-861-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" title="集菌仪" target="_blank">
+								集菌仪</a></li>
+
+						<li><a href="/ProductC2-11-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" title="生物安全柜" target="_blank">
+								生物安全柜</a></li>
+
+						<li><a href="/ProductC2-1-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" title="超净工作台" target="_blank">
+								超净工作台</a></li>
+
+						<li><a href="/ProductC2-15-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" title="高压蒸汽灭菌器" target="_blank">
+								高压蒸汽灭菌器</a></li>
+
+						<li><a href="/ProductC2-232-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" title="离心机" target="_blank">
+								离心机</a></li>
+
+						<li><a href="/ProductC2-236-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" title="崩解仪" target="_blank">
+								崩解仪</a></li>
+
+						<li><a href="/ProductC2-237-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" title="药物溶出仪" target="_blank">
+								药物溶出仪</a></li>
+
+						<li><a href="/ProductC2-252-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" title="鼓风干燥箱" target="_blank">
+								鼓风干燥箱</a></li>
+
+						<li><a href="/ProductC2-34-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" title="生化培养箱" target="_blank">
+								生化培养箱</a></li>
+
+						<li><a href="/ProductC2-257-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" title="药品试验箱" target="_blank">
+								药品试验箱</a></li>
+
+						<li><a href="/ProductC2-748-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" title="原子吸收分光光度计" target="_blank">
+								原子吸收分光光度计</a></li>
+
+						<li><a href="/ProductC2-697-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" title="TOC分析仪" target="_blank">
+								TOC分析仪</a></li>
+
+						<li><a href="/ProductC2-217-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" title="低温冰箱" target="_blank">
+								低温冰箱</a></li>
+
+					</ul>
 				</div>
 			</div>
-			<div class="floor_2">
-				<div class="f2_left floor_left">
-					<h2>
-						<i style="background-image:url(images/flooricon-2.png)">
-							<span>2F</span>
-						</i>
-					</h2>
-					<div class="floor_name" style="background-color: #4f5869">
-						临床检验
-					</div>
-					<div class="floor_img">
-						<img src="http://www.lab360.cn/uploadfile/201808/201808301511043651.jpg">
-					</div>
-					<div class="floor_text">
-						<ul>
-							<li><a href="javascript:;" title="" target="_blank">设备</a></li>
-							<li><a href="javascript:;" title="" target="_blank">设备</a></li>
-							<li><a href="javascript:;" title="" target="_blank"></a></li>
-							<li><a href="javascript:;" title="" target="_blank"></a></li>
-							<li><a href="javascript:;" title="" target="_blank"></a></li>
-							<li><a href="javascript:;" title="" target="_blank"></a></li>
-							<li><a href="javascript:;" title="" target="_blank"></a></li>
-							<li><a href="javascript:;" title="" target="_blank"></a></li>
-							<li><a href="javascript:;" title="" target="_blank"></a></li>
-							<li><a href="javascript:;" title="" target="_blank"></a></li>
-							<li><a href="javascript:;" title="" target="_blank"></a></li>
-							<li><a href="javascript:;" title="" target="_blank"></a></li>
-						</ul>
-					</div>
+			<div class="f1_right floor_right">
+				<div class="tab_title">
+					<ul>
+						<li class="active"><a href="javascript:;">药厂理化实验室</a></li>
+						<li><a href="javascript:;">药厂微生物实验室</a></li>
+						<li><a href="javascript:;">生物制品厂</a></li>
+						<li><a href="javascript:;">血液制品厂</a></li>
+						<li><a href="javascript:;">中成药厂</a></li>
+						<li><a href="javascript:;">中药饮片厂</a></li>
+						<li><a href="javascript:;">抗生素厂</a></li>
+						<li><a href="javascript:;">注射剂的无菌检测</a></li>
+						<li><a href="javascript:;">片剂微生物限度检查</a></li>
+						<li><a href="javascript:;">样品前处理</a></li>
+					</ul>
 				</div>
-				<div class="f2_right floor_right">
-					<div class="tab_title">
-						<ul>
-							<li><a href="javascript:;">药厂理化实验室</a></li>
-							<li><a href="javascript:;">药厂微生物实验室</a></li>
-							<li><a href="javascript:;">生物制品厂</a></li>
-							<li><a href="javascript:;">血液制品厂</a></li>
-							<li><a href="javascript:;">中成药厂</a></li>
-							<li><a href="javascript:;">中药饮片厂</a></li>
-							<li><a href="javascript:;">抗生素厂</a></li>
-							<li><a href="javascript:;">注射剂的无菌检测</a></li>
-							<li><a href="javascript:;">片剂微生物限度检查</a></li>
-							<li><a href="javascript:;">样品前处理</a></li>
-						</ul>
-					</div>
-					<div class="tab_content">
-						<ul>
-							<li>
-								<div class="f_img">
-									<a href="javascript:;">
-										<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
-									</a>
-								</div>
-								<div class="f_name">
-									<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
-								</div>
-								<div class="f_price">
-									<a href="javascript:;">在线询价</a>
-								</div>
-							</li>
-							<li>
-								<div class="f_img">
-									<a href="javascript:;">
-										<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
-									</a>
-								</div>
-								<div class="f_name">
-									<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
-								</div>
-								<div class="f_price">
-									<a href="javascript:;">在线询价</a>
-								</div>
-							</li>
-							<li>
-								<div class="f_img">
-									<a href="javascript:;">
-										<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
-									</a>
-								</div>
-								<div class="f_name">
-									<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
-								</div>
-								<div class="f_price">
-									<a href="javascript:;">在线询价</a>
-								</div>
-							</li>
-							<li>
-								<div class="f_img">
-									<a href="javascript:;">
-										<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
-									</a>
-								</div>
-								<div class="f_name">
-									<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
-								</div>
-								<div class="f_price">
-									<a href="javascript:;">在线询价</a>
-								</div>
-							</li>
-							<li>
-								<div class="f_img">
-									<a href="javascript:;">
-										<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
-									</a>
-								</div>
-								<div class="f_name">
-									<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
-								</div>
-								<div class="f_price">
-									<a href="javascript:;">在线询价</a>
-								</div>
-							</li>
-							<li>
-								<div class="f_img">
-									<a href="javascript:;">
-										<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
-									</a>
-								</div>
-								<div class="f_name">
-									<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
-								</div>
-								<div class="f_price">
-									<a href="javascript:;">在线询价</a>
-								</div>
-							</li>
-							<li>
-								<div class="f_img">
-									<a href="javascript:;">
-										<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
-									</a>
-								</div>
-								<div class="f_name">
-									<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
-								</div>
-								<div class="f_price">
-									<a href="javascript:;">在线询价</a>
-								</div>
-							</li>
-							<li>
-								<div class="f_img">
-									<a href="javascript:;">
-										<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
-									</a>
-								</div>
-								<div class="f_name">
-									<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
-								</div>
-								<div class="f_price">
-									<a href="javascript:;">在线询价</a>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="floor_3">
-				<div class="f3_left floor_left">
-					<h2>
-						<i style="background-image:url(images/flooricon-2.png)">
-							<span>3F</span>
-						</i>
-					</h2>
-					<div class="floor_name" style="background-color: #4f5869">
-						临床检验
-					</div>
-					<div class="floor_img">
-						<img src="http://www.lab360.cn/uploadfile/201808/201808301511043651.jpg">
-					</div>
-					<div class="floor_text">
-						<ul>
-							<li><a href="javascript:;" title="" target="_blank">设备</a></li>
-							<li><a href="javascript:;" title="" target="_blank">设备</a></li>
-							<li><a href="javascript:;" title="" target="_blank"></a></li>
-							<li><a href="javascript:;" title="" target="_blank"></a></li>
-							<li><a href="javascript:;" title="" target="_blank"></a></li>
-							<li><a href="javascript:;" title="" target="_blank"></a></li>
-							<li><a href="javascript:;" title="" target="_blank"></a></li>
-							<li><a href="javascript:;" title="" target="_blank"></a></li>
-							<li><a href="javascript:;" title="" target="_blank"></a></li>
-							<li><a href="javascript:;" title="" target="_blank"></a></li>
-							<li><a href="javascript:;" title="" target="_blank"></a></li>
-							<li><a href="javascript:;" title="" target="_blank"></a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="f3_right floor_right">
-					<div class="tab_title">
-						<ul>
-							<li><a href="javascript:;">药厂理化实验室</a></li>
-							<li><a href="javascript:;">药厂微生物实验室</a></li>
-							<li><a href="javascript:;">生物制品厂</a></li>
-							<li><a href="javascript:;">血液制品厂</a></li>
-							<li><a href="javascript:;">中成药厂</a></li>
-							<li><a href="javascript:;">中药饮片厂</a></li>
-							<li><a href="javascript:;">抗生素厂</a></li>
-							<li><a href="javascript:;">注射剂的无菌检测</a></li>
-							<li><a href="javascript:;">片剂微生物限度检查</a></li>
-							<li><a href="javascript:;">样品前处理</a></li>
-						</ul>
-					</div>
-					<div class="tab_content">
-						<ul>
-							<li>
-								<div class="f_img">
-									<a href="javascript:;">
-										<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
-									</a>
-								</div>
-								<div class="f_name">
-									<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
-								</div>
-								<div class="f_price">
-									<a href="javascript:;">在线询价</a>
-								</div>
-							</li>
-							<li>
-								<div class="f_img">
-									<a href="javascript:;">
-										<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
-									</a>
-								</div>
-								<div class="f_name">
-									<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
-								</div>
-								<div class="f_price">
-									<a href="javascript:;">在线询价</a>
-								</div>
-							</li>
-							<li>
-								<div class="f_img">
-									<a href="javascript:;">
-										<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
-									</a>
-								</div>
-								<div class="f_name">
-									<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
-								</div>
-								<div class="f_price">
-									<a href="javascript:;">在线询价</a>
-								</div>
-							</li>
-							<li>
-								<div class="f_img">
-									<a href="javascript:;">
-										<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
-									</a>
-								</div>
-								<div class="f_name">
-									<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
-								</div>
-								<div class="f_price">
-									<a href="javascript:;">在线询价</a>
-								</div>
-							</li>
-							<li>
-								<div class="f_img">
-									<a href="javascript:;">
-										<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
-									</a>
-								</div>
-								<div class="f_name">
-									<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
-								</div>
-								<div class="f_price">
-									<a href="javascript:;">在线询价</a>
-								</div>
-							</li>
-							<li>
-								<div class="f_img">
-									<a href="javascript:;">
-										<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
-									</a>
-								</div>
-								<div class="f_name">
-									<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
-								</div>
-								<div class="f_price">
-									<a href="javascript:;">在线询价</a>
-								</div>
-							</li>
-							<li>
-								<div class="f_img">
-									<a href="javascript:;">
-										<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
-									</a>
-								</div>
-								<div class="f_name">
-									<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
-								</div>
-								<div class="f_price">
-									<a href="javascript:;">在线询价</a>
-								</div>
-							</li>
-							<li>
-								<div class="f_img">
-									<a href="javascript:;">
-										<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
-									</a>
-								</div>
-								<div class="f_name">
-									<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
-								</div>
-								<div class="f_price">
-									<a href="javascript:;">在线询价</a>
-								</div>
-							</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="floor_4">
-				<div class="f4_left floor_left">
-					<h2>
-						<i style="background-image:url(images/flooricon-2.png)">
-							<span>4F</span>
-						</i>
-					</h2>
-					<div class="floor_name" style="background-color: #4f5869">
-						临床检验
-					</div>
-					<div class="floor_img">
-						<img src="http://www.lab360.cn/uploadfile/201808/201808301511043651.jpg">
-					</div>
-					<div class="floor_text">
-						<ul>
-							<li><a href="javascript:;" title="" target="_blank">设备</a></li>
-							<li><a href="javascript:;" title="" target="_blank">设备</a></li>
-							<li><a href="javascript:;" title="" target="_blank"></a></li>
-							<li><a href="javascript:;" title="" target="_blank"></a></li>
-							<li><a href="javascript:;" title="" target="_blank"></a></li>
-							<li><a href="javascript:;" title="" target="_blank"></a></li>
-							<li><a href="javascript:;" title="" target="_blank"></a></li>
-							<li><a href="javascript:;" title="" target="_blank"></a></li>
-							<li><a href="javascript:;" title="" target="_blank"></a></li>
-							<li><a href="javascript:;" title="" target="_blank"></a></li>
-							<li><a href="javascript:;" title="" target="_blank"></a></li>
-							<li><a href="javascript:;" title="" target="_blank"></a></li>
-						</ul>
-					</div>
-				</div>
-				<div class="f4_right floor_right">
-					<div class="tab_title">
-						<ul>
-							<li><a href="javascript:;">药厂理化实验室</a></li>
-							<li><a href="javascript:;">药厂微生物实验室</a></li>
-							<li><a href="javascript:;">生物制品厂</a></li>
-							<li><a href="javascript:;">血液制品厂</a></li>
-							<li><a href="javascript:;">中成药厂</a></li>
-							<li><a href="javascript:;">中药饮片厂</a></li>
-							<li><a href="javascript:;">抗生素厂</a></li>
-							<li><a href="javascript:;">注射剂的无菌检测</a></li>
-							<li><a href="javascript:;">片剂微生物限度检查</a></li>
-							<li><a href="javascript:;">样品前处理</a></li>
-						</ul>
-					</div>
-					<div class="tab_content">
-						<ul>
-							<li>
-								<div class="f_img">
-									<a href="javascript:;">
-										<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
-									</a>
-								</div>
-								<div class="f_name">
-									<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
-								</div>
-								<div class="f_price">
-									<a href="javascript:;">在线询价</a>
-								</div>
-							</li>
-							<li>
-								<div class="f_img">
-									<a href="javascript:;">
-										<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
-									</a>
-								</div>
-								<div class="f_name">
-									<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
-								</div>
-								<div class="f_price">
-									<a href="javascript:;">在线询价</a>
-								</div>
-							</li>
-							<li>
-								<div class="f_img">
-									<a href="javascript:;">
-										<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
-									</a>
-								</div>
-								<div class="f_name">
-									<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
-								</div>
-								<div class="f_price">
-									<a href="javascript:;">在线询价</a>
-								</div>
-							</li>
-							<li>
-								<div class="f_img">
-									<a href="javascript:;">
-										<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
-									</a>
-								</div>
-								<div class="f_name">
-									<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
-								</div>
-								<div class="f_price">
-									<a href="javascript:;">在线询价</a>
-								</div>
-							</li>
-							<li>
-								<div class="f_img">
-									<a href="javascript:;">
-										<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
-									</a>
-								</div>
-								<div class="f_name">
-									<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
-								</div>
-								<div class="f_price">
-									<a href="javascript:;">在线询价</a>
-								</div>
-							</li>
-							<li>
-								<div class="f_img">
-									<a href="javascript:;">
-										<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
-									</a>
-								</div>
-								<div class="f_name">
-									<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
-								</div>
-								<div class="f_price">
-									<a href="javascript:;">在线询价</a>
-								</div>
-							</li>
-							<li>
-								<div class="f_img">
-									<a href="javascript:;">
-										<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
-									</a>
-								</div>
-								<div class="f_name">
-									<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
-								</div>
-								<div class="f_price">
-									<a href="javascript:;">在线询价</a>
-								</div>
-							</li>
-							<li>
-								<div class="f_img">
-									<a href="javascript:;">
-										<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
-									</a>
-								</div>
-								<div class="f_name">
-									<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
-								</div>
-								<div class="f_price">
-									<a href="javascript:;">在线询价</a>
-								</div>
-							</li>
-						</ul>
-					</div>
+				<div class="tab_content">
+					<ul style="display:block">
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+					</ul>
+					<ul>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
+		<div class="louti floor_2">
+			<div class="f2_left floor_left">
+				<h2>
+					<i style="background-image:url(images/flooricon-2.png)">
+						<span>2F</span>
+					</i>
+				</h2>
+				<div class="floor_name" style="background-color: #4f5869">
+					临床检验
+				</div>
+				<div class="floor_img">
+					<img src="http://www.lab360.cn/uploadfile/201808/201808301511043651.jpg">
+				</div>
+				<div class="floor_text">
+					<ul>
+
+						<li><a href="/ProductC2-228-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" title="液氮罐" target="_blank">
+								液氮罐</a></li>
+
+						<li><a href="/ProductC2-602-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" title="药品阴凉柜" target="_blank">
+								药品阴凉柜</a></li>
+
+						<li><a href="/ProductC2-470-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" title="微量元素分析仪" target="_blank">
+								微量元素分析仪</a></li>
+
+						<li><a href="/ProductC2-51-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" title="尘埃粒子计数器" target="_blank">
+								尘埃粒子计数器</a></li>
+
+						<li><a href="/ProductC2-995-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" title="经皮黄疸仪" target="_blank">
+								经皮黄疸仪</a></li>
+
+						<li><a href="/ProductC2-38-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" title="酶标仪" target="_blank">
+								酶标仪</a></li>
+
+						<li><a href="/ProductC2-994-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" title="红光治疗仪" target="_blank">
+								红光治疗仪</a></li>
+
+						<li><a href="/ProductC2-442-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" title="红外线灭菌器" target="_blank">
+								红外线灭菌器</a></li>
+
+						<li><a href="/ProductC2-939-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" title="血液冷藏箱" target="_blank">
+								血液冷藏箱</a></li>
+
+						<li><a href="/ProductC2-431-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" title="全自动酶免分析系统" target="_blank">
+								全自动酶免分析系统</a></li>
+
+						<li><a href="/ProductC2-15-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" title="高压蒸汽灭菌器" target="_blank">
+								高压蒸汽灭菌器</a></li>
+
+						<li><a href="/ProductC2-226-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" title="水浴锅" target="_blank">
+								水浴锅</a></li>
+
+						<li><a href="/ProductC2-452-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" title="药品冷藏箱" target="_blank">
+								药品冷藏箱</a></li>
+
+					</ul>
+				</div>
+			</div>
+			<div class="f2_right floor_right">
+				<div class="tab_title">
+					<ul>
+						<li class="active"><a href="javascript:;">药厂理化实验室</a></li>
+						<li><a href="javascript:;">药厂微生物实验室</a></li>
+						<li><a href="javascript:;">生物制品厂</a></li>
+						<li><a href="javascript:;">血液制品厂</a></li>
+						<li><a href="javascript:;">中成药厂</a></li>
+						<li><a href="javascript:;">中药饮片厂</a></li>
+						<li><a href="javascript:;">抗生素厂</a></li>
+						<li><a href="javascript:;">注射剂的无菌检测</a></li>
+						<li><a href="javascript:;">片剂微生物限度检查</a></li>
+						<li><a href="javascript:;">样品前处理</a></li>
+					</ul>
+				</div>
+				<div class="tab_content">
+					<ul style="display:block">
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201410/201410131058580937.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201606/201606030901109709.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201802/201802230906408642.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201611/201611211324242670.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201306/201366132918369.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="louti floor_3">
+			<div class="f3_left floor_left">
+				<h2>
+					<i style="background-image:url(http://www.lab360.cn/image/indexneweight/flooricon-3.png)">
+						<span>3F</span>
+					</i>
+				</h2>
+				<div class="floor_name" style="background-color: #572868">
+					食品检测
+				</div>
+				<div class="floor_img">
+					<img src="http://www.lab360.cn/uploadfile/201808/201808301510058435.jpg">
+				</div>
+				<div class="floor_text">
+					<ul>
+
+						<li><a href="/ProductC2-1-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" title="超净工作台" target="_blank">
+								超净工作台</a></li>
+
+						<li><a href="/ProductC2-34-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" title="生化培养箱" target="_blank">
+								生化培养箱</a></li>
+
+						<li><a href="/ProductC2-27-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" title="电热恒温培养箱" target="_blank">
+								电热恒温培养箱</a></li>
+
+						<li><a href="/ProductC2-252-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" title="鼓风干燥箱" target="_blank">
+								鼓风干燥箱</a></li>
+
+						<li><a href="/ProductC2-15-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" title="高压蒸汽灭菌器" target="_blank">
+								高压蒸汽灭菌器</a></li>
+
+						<li><a href="/ProductC2-361-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" title="菌落计数器" target="_blank">
+								菌落计数器</a></li>
+
+						<li><a href="/ProductC2-232-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" title="离心机" target="_blank">
+								离心机</a></li>
+
+						<li><a href="/ProductC2-217-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" title="低温冰箱" target="_blank">
+								低温冰箱</a></li>
+
+						<li><a href="/ProductC2-442-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" title="红外线灭菌器" target="_blank">
+								红外线灭菌器</a></li>
+
+						<li><a href="/ProductC2-25-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" title="天平" target="_blank">
+								天平</a></li>
+
+						<li><a href="/ProductC2-189-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" title="PH计" target="_blank">
+								PH计</a></li>
+
+						<li><a href="/ProductC2-349-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" title="显微镜" target="_blank">
+								显微镜</a></li>
+
+						<li><a href="/ProductC2-226-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" title="水浴锅" target="_blank">
+								水浴锅</a></li>
+
+						<li><a href="/ProductC2-38-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" title="酶标仪" target="_blank">
+								酶标仪</a></li>
+
+					</ul>
+				</div>
+			</div>
+			<div class="f3_right floor_right">
+				<div class="tab_title">
+					<ul>
+						<li><a href="javascript:;">药厂理化实验室</a></li>
+						<li><a href="javascript:;">药厂微生物实验室</a></li>
+						<li><a href="javascript:;">生物制品厂</a></li>
+						<li><a href="javascript:;">血液制品厂</a></li>
+						<li><a href="javascript:;">中成药厂</a></li>
+						<li><a href="javascript:;">中药饮片厂</a></li>
+						<li><a href="javascript:;">抗生素厂</a></li>
+						<li><a href="javascript:;">注射剂的无菌检测</a></li>
+						<li><a href="javascript:;">片剂微生物限度检查</a></li>
+						<li><a href="javascript:;">样品前处理</a></li>
+					</ul>
+				</div>
+				<div class="tab_content">
+					<ul style="display:block">
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/2011728135932749.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201211/20121120143843286.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201604/201604121325024511.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201601/201601281112574651.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201703/201703180952499696.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201802/201802211516493386.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201704/201704131900336647.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201701/201701211139505808.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div class="louti floor_4">
+			<div class="f4_left floor_left">
+				<h2>
+					<i style="background-image:url(http://www.lab360.cn/image/indexneweight/flooricon-4.png)">
+						<span>4F</span>
+					</i>
+				</h2>
+				<div class="floor_name" style="background-color: #e82b12">
+					生命科学
+				</div>
+				<div class="floor_img">
+					<img src="http://www.lab360.cn/uploadfile/201808/201808301510111586.jpg">
+				</div>
+				<div class="floor_text">
+					<ul>
+
+						<li><a href="/ProductC2-45-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" title="电泳仪" target="_blank">
+								电泳仪</a></li>
+
+						<li><a href="/ProductC2-421-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" title="恒温摇床" target="_blank">
+								恒温摇床</a></li>
+
+						<li><a href="/ProductC2-217-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" title="低温冰箱" target="_blank">
+								低温冰箱</a></li>
+
+						<li><a href="/ProductC2-104-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" title="凝胶成像系统" target="_blank">
+								凝胶成像系统</a></li>
+
+						<li><a href="/ProductC2-82-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" title="发酵罐" target="_blank">
+								发酵罐</a></li>
+
+						<li><a href="/ProductC2-550-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" title="超声波萃取仪" target="_blank">
+								超声波萃取仪</a></li>
+
+						<li><a href="/ProductC2-461-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" title="均质器" target="_blank">
+								均质器</a></li>
+
+						<li><a href="/ProductC2-22-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" title="冷冻干燥机" target="_blank">
+								冷冻干燥机</a></li>
+
+						<li><a href="/ProductC2-38-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" title="酶标仪" target="_blank">
+								酶标仪</a></li>
+
+						<li><a href="/ProductC2-30-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" title="洗板机" target="_blank">
+								洗板机</a></li>
+
+						<li><a href="/ProductC2-15-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" title="高压蒸汽灭菌器" target="_blank">
+								高压蒸汽灭菌器</a></li>
+
+						<li><a href="/ProductC2-32-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" title="二氧化碳培养箱" target="_blank">
+								二氧化碳培养箱</a></li>
+
+						<li><a href="/ProductC2-66-0-0-0-0-0-0-0-0-0-0-0-1-sort_totalsales_desc.html" title="超声波粉碎仪" target="_blank">
+								超声波粉碎仪</a></li>
+
+					</ul>
+				</div>
+			</div>
+			<div class="f4_right floor_right">
+				<div class="tab_title">
+					<ul>
+						<li><a href="javascript:;">药厂理化实验室</a></li>
+						<li><a href="javascript:;">药厂微生物实验室</a></li>
+						<li><a href="javascript:;">生物制品厂</a></li>
+						<li><a href="javascript:;">血液制品厂</a></li>
+						<li><a href="javascript:;">中成药厂</a></li>
+						<li><a href="javascript:;">中药饮片厂</a></li>
+						<li><a href="javascript:;">抗生素厂</a></li>
+						<li><a href="javascript:;">注射剂的无菌检测</a></li>
+						<li><a href="javascript:;">片剂微生物限度检查</a></li>
+						<li><a href="javascript:;">样品前处理</a></li>
+					</ul>
+				</div>
+				<div class="tab_content">
+					<ul style="display:block">
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201401/201411591617411.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201501/201501040355062435.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201605/201605160927325464.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201607/201607051551243837.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201410/201410090439245498.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201605/201605051527248016.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201510/201510150210159892.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+						<li>
+							<div class="f_img">
+								<a href="javascript:;">
+									<img src="http://www.lab360.cn/Product300Img/201704/201704131900336647.jpg">
+								</a>
+							</div>
+							<div class="f_name">
+								<a href="javascript:;">自动旋光仪现货供应(大屏幕背光液晶显示，数字电路，微机控制技术)</a>
+							</div>
+							<div class="f_price">
+								<a href="javascript:;">在线询价</a>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- </div> -->
 		<!-- 插播广告2 -->
 		<div class="adv adv2">
 			<a href="javascript:;">
@@ -824,7 +1930,7 @@
 			</a>
 		</div>
 		<!-- 发现好货 -->
-		<div class="findgoods">
+		<div class="louti findgoods">
 			<div class="findgoods_top">
 				<span class="findgoodstext">发现好货</span>
 			</div>
@@ -887,9 +1993,8 @@
 
 					<li>
 						<div class="findgoodsimg">
-							<a class="p_lk" href="javascript:;" id="findgood96989"
-							 target="_blank" title="RCY-808智能溶出试验仪">
-								<img src="http://www.lab360.cn/Product300Img/201809/201809301048218779.jpg" alt="RCY-808智能溶出试验仪" >
+							<a class="p_lk" href="javascript:;" id="findgood96989" target="_blank" title="RCY-808智能溶出试验仪">
+								<img src="http://www.lab360.cn/Product300Img/201809/201809301048218779.jpg" alt="RCY-808智能溶出试验仪">
 							</a>
 						</div>
 						<div class="findgoodscontent">
@@ -909,8 +2014,10 @@
 	</div>
 	<!-- 底部内容 -->
 	<div id="footercontent"></div>
-	<script type="text/javascript" src="script/thirdplugins/jquery.js"></script>
-	<script type="text/javascript" src="script/js/index.js"></script>
+	<script src="script/thirdplugins/jquery.js"></script>
+	<script src="script/thirdplugins/jquery.cookie.js"></script>
+	<script type="text/javascript" src="script/thirdplugins/require.js" defer async="true" data-main="script/main.js"></script>
+
 </body>
 
 </html>
